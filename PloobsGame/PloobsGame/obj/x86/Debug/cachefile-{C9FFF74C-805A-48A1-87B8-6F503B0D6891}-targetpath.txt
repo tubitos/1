@@ -1,7 +1,0 @@
-Content\Models\landscape\chunk\#test\chunk.xnb
-Content\Models\objects\people\baseMan.xnb
-Content\Models\objects\assets\primitives\cube.xnb
-Content\Models\landscape\chunk\#test\chunkT.xnb
-Content\Models\objects\people\baseManT.xnb
-Content\Images\menus\gameMenu.xnb
-Content\Images\mouse\defualt.xnb

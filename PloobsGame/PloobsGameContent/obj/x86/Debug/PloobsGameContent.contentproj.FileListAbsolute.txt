@@ -1,3 +1,0 @@
-C:\Users\Rakosmanjr\Documents\Visual Studio 2010\Projects\XNA\PloobsGame\PloobsGame\PloobsGameContent\obj\x86\Debug\ResolveAssemblyReference.cache
-V:\Users\Administrator\Documents\Visual Studio 2010\Projects\XNA\PloobsGame\PloobsGame\PloobsGameContent\obj\x86\Debug\ResolveAssemblyReference.cache
-V:\Users\Administrator\Documents\Visual Studio 2010\Projects\PloobsGame\PloobsGame\PloobsGameContent\obj\x86\Debug\ResolveAssemblyReference.cache
