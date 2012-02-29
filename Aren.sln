@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aren", "Aren\Aren\Aren.csproj", "{A26861B0-2536-4192-B0B1-1CFEC1E000F3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArenContent", "Aren\ArenContent\ArenContent.contentproj", "{C9FFF74C-805A-48A1-87B8-6F503B0D6891}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Launcher", "Launcher\Launcher.csproj", "{00E5BEA7-BA76-4736-AB6B-03B3D9B62AB2}"
+EndProject
+Global
+	GlobalSection(SubversionScc) = preSolution
+		Svn-Managed = True
+		Manager = AnkhSVN - Subversion Support for Visual Studio
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A26861B0-2536-4192-B0B1-1CFEC1E000F3}.Debug|x86.ActiveCfg = Debug|x86
+		{A26861B0-2536-4192-B0B1-1CFEC1E000F3}.Debug|x86.Build.0 = Debug|x86
+		{A26861B0-2536-4192-B0B1-1CFEC1E000F3}.Release|x86.ActiveCfg = Release|x86
+		{A26861B0-2536-4192-B0B1-1CFEC1E000F3}.Release|x86.Build.0 = Release|x86
+		{C9FFF74C-805A-48A1-87B8-6F503B0D6891}.Debug|x86.ActiveCfg = Debug|x86
+		{C9FFF74C-805A-48A1-87B8-6F503B0D6891}.Release|x86.ActiveCfg = Release|x86
+		{00E5BEA7-BA76-4736-AB6B-03B3D9B62AB2}.Debug|x86.ActiveCfg = Debug|x86
+		{00E5BEA7-BA76-4736-AB6B-03B3D9B62AB2}.Debug|x86.Build.0 = Debug|x86
+		{00E5BEA7-BA76-4736-AB6B-03B3D9B62AB2}.Release|x86.ActiveCfg = Release|x86
+		{00E5BEA7-BA76-4736-AB6B-03B3D9B62AB2}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
