@@ -19,7 +19,7 @@ namespace Aren.engine.settings.properties
 		Hashtable game;
 
 		public Saver ()
-			: this (Environment.GetFolderPath (Environment.SpecialFolder.MyDocuments, Environment.SpecialFolderOption.None) + @"\My Games\[GAME NAME]\config\")
+			: this (Environment.GetFolderPath (Environment.SpecialFolder.MyDocuments, Environment.SpecialFolderOption.None) + @"\My Games\[GAME NAME]\config")
 		{
 			
 		}
@@ -45,29 +45,40 @@ namespace Aren.engine.settings.properties
 
 		void CheckForSettingsFiles ()
 		{
-			FileStream fs = new FileStream (settingsPath + @"keys.cfg", FileMode.Open);
-
-			if (!File.Exists (settingsPath + @"keys.cfg"))
+			try
 			{
-				fs = File.Create (settingsPath + @"keys.cfg");
-			}
+				FileStream fs = new FileStream(settingsPath, FileMode.Open);
 
-			if (!File.Exists (settingsPath + @"graphics.cfg"))
+				if (!File.Exists(settingsPath + @"\keys.cfg"))
+				{
+					fs = File.Create(settingsPath + @"\keys.cfg");
+				}
+
+				if (!File.Exists(settingsPath + @"\graphics.cfg"))
+				{
+					fs = File.Create(settingsPath + @"\graphics.cfg");
+				}
+
+				if (!File.Exists(settingsPath + @"\sound.cfg"))
+				{
+					fs = File.Create(settingsPath + @"\sound.cfg");
+				}
+
+				if (!File.Exists(settingsPath + @"\game.cfg"))
+				{
+					fs = File.Create(settingsPath + @"\game.cfg");
+				}
+
+				fs.Close();
+			}
+			catch (Exception e)
 			{
-				fs = File.Create (settingsPath + @"graphics.cfg");
+				if (e is UnauthorizedAccessException)
+				{
+					MessageBox.Show("Unauthorized Access Exception at 'Aren.engine.settings.properties.Saver'!" + 
+						"\nPlese contact support regarding this issue.", "Unhandled Excepton!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+				}
 			}
-
-			if (!File.Exists (settingsPath + @"sound.cfg"))
-			{
-				fs = File.Create (settingsPath + @"sound.cfg");
-			}
-
-			if (!File.Exists (settingsPath + @"game.cfg"))
-			{
-				fs = File.Create (settingsPath + @"game.cfg");
-			}
-
-			fs.Close ();
 		}
 
 		void PopulateKeys ()

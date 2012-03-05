@@ -1,1 +1,2 @@
 V:\Users\Administrator\Documents\Visual Studio 2010\Projects\Aren\Aren\ArenContent\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Aren Rise of the North\Aren\ArenContent\obj\x86\Debug\ResolveAssemblyReference.cache

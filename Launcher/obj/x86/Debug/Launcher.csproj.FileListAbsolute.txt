@@ -22,3 +22,28 @@ V:\Users\Administrator\Documents\Visual Studio 2010\Projects\PloobsGame\Launcher
 V:\Users\Administrator\Documents\Visual Studio 2010\Projects\PloobsGame\Launcher\bin\Debug\PloobsGame.pdb
 V:\Users\Administrator\Documents\Visual Studio 2010\Projects\PloobsGame\Launcher\bin\Debug\PloobsEngineDebug.xml
 V:\Users\Administrator\Documents\Visual Studio 2010\Projects\PloobsGame\Launcher\obj\x86\Debug\Launcher.Launcher.resources
+C:\Aren Rise of the North\Launcher\bin\Debug\Launcher.exe.config
+C:\Aren Rise of the North\Launcher\obj\x86\Debug\Launcher.exe
+C:\Aren Rise of the North\Launcher\obj\x86\Debug\Launcher.pdb
+C:\Aren Rise of the North\Launcher\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Aren Rise of the North\Launcher\obj\x86\Debug\Launcher.Launcher.resources
+C:\Aren Rise of the North\Launcher\obj\x86\Debug\Launcher.Properties.Resources.resources
+C:\Aren Rise of the North\Launcher\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Aren Rise of the North\Launcher\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Aren Rise of the North\Launcher\bin\Debug\Content\Models\landscape\chunk\#test\chunk.xnb
+C:\Aren Rise of the North\Launcher\bin\Debug\Content\Models\objects\people\baseMan.xnb
+C:\Aren Rise of the North\Launcher\bin\Debug\Content\Models\objects\assets\primitives\cube.xnb
+C:\Aren Rise of the North\Launcher\bin\Debug\Content\Models\landscape\chunk\#test\chunkT.xnb
+C:\Aren Rise of the North\Launcher\bin\Debug\Content\Models\objects\people\baseManT.xnb
+C:\Aren Rise of the North\Launcher\bin\Debug\Content\Images\menus\gameMenu.xnb
+C:\Aren Rise of the North\Launcher\bin\Debug\Content\Images\mouse\defualt.xnb
+C:\Aren Rise of the North\Launcher\bin\Debug\databases\Database1_log.LDF
+C:\Aren Rise of the North\Launcher\bin\Debug\databases\ItemsDB.mdf
+C:\Aren Rise of the North\Launcher\bin\Debug\databases\ItemsDB_log.ldf
+C:\Aren Rise of the North\Launcher\bin\Debug\Launcher.exe
+C:\Aren Rise of the North\Launcher\bin\Debug\Launcher.pdb
+C:\Aren Rise of the North\Launcher\bin\Debug\Aren.exe
+C:\Aren Rise of the North\Launcher\bin\Debug\PloobsEngineDebug.dll
+C:\Aren Rise of the North\Launcher\bin\Debug\Aren.pdb
+C:\Aren Rise of the North\Launcher\bin\Debug\PloobsEngineDebug.xml
+C:\Aren Rise of the North\Launcher\bin\Debug\Content\Images\menus\MainMenu.xnb

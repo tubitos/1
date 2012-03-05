@@ -76,13 +76,8 @@ namespace Aren.menu
 			//Draw Mouse
 			if (EngineSettings.freeMouse)
 			{
-				render.RenderTextureComplete (mouseCursor, Color.White, new Rectangle (EngineSettings.mstate.X, EngineSettings.mstate.Y, 32, 32), Matrix.Identity);
+				render.RenderTextureComplete(mouseCursor, Color.White, new Rectangle(InputStates.mstate.X, InputStates.mstate.Y, 32, 32), Matrix.Identity);
 			}
-		}
-
-		protected override void CleanUp (PloobsEngine.Engine.EngineStuff engine)
-		{
-			base.CleanUp (engine);
 		}
 	}
 }

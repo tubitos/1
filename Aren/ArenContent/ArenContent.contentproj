@@ -44,9 +44,6 @@
     <Reference Include="Microsoft.Xna.Framework.Content.Pipeline.VideoImporters, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=MSIL">
       <Private>False</Private>
     </Reference>
-    <Reference Include="PloobsEnginePipelineDebug">
-      <HintPath>..\Aren\include\PloobsEnginePipelineDebug.dll</HintPath>
-    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Images\company\" />
@@ -101,6 +98,13 @@
   <ItemGroup>
     <Compile Include="Images\mouse\defualt.png">
       <Name>defualt</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Images\menus\MainMenu.png">
+      <Name>MainMenu</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>

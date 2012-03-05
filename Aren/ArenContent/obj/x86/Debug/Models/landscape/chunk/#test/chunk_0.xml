@@ -3,7 +3,7 @@
   <Asset Type="Graphics:NodeContent">
     <Name>Root</Name>
     <Identity>
-      <SourceFilename>V:\Users\Administrator\Documents\Visual Studio 2010\Projects\Aren\Aren\ArenContent\Models\landscape\chunk\#test\chunk.x</SourceFilename>
+      <SourceFilename>C:\Aren Rise of the North\Aren\ArenContent\Models\landscape\chunk\#test\chunk.x</SourceFilename>
       <SourceTool>XImporter</SourceTool>
     </Identity>
     <Transform>1 0 0 0 0 0 -1 0 0 -1 0 0 0 0 0 1</Transform>
@@ -37,7 +37,7 @@
   <Resources>
     <Resource ID="#Resource1" Type="Graphics:BasicMaterialContent">
       <Identity>
-        <SourceFilename>V:\Users\Administrator\Documents\Visual Studio 2010\Projects\Aren\Aren\ArenContent\Models\landscape\chunk\#test\chunk.x</SourceFilename>
+        <SourceFilename>C:\Aren Rise of the North\Aren\ArenContent\Models\landscape\chunk\#test\chunk.x</SourceFilename>
         <SourceTool>XImporter</SourceTool>
       </Identity>
       <OpaqueData>

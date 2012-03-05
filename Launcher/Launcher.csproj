@@ -80,9 +80,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\PloobsGame\PloobsGame\PloobsGame.csproj">
+    <ProjectReference Include="..\Aren\Aren\Aren.csproj">
       <Project>{A26861B0-2536-4192-B0B1-1CFEC1E000F3}</Project>
-      <Name>PloobsGame</Name>
+      <Name>Aren</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

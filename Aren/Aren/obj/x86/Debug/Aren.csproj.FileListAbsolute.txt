@@ -18,3 +18,22 @@ V:\Users\Administrator\Documents\Visual Studio 2010\Projects\Aren\Aren\Aren\obj\
 V:\Users\Administrator\Documents\Visual Studio 2010\Projects\Aren\Aren\Aren\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
 V:\Users\Administrator\Documents\Visual Studio 2010\Projects\Aren\Aren\Aren\obj\x86\Debug\Aren.exe
 V:\Users\Administrator\Documents\Visual Studio 2010\Projects\Aren\Aren\Aren\obj\x86\Debug\Aren.pdb
+C:\Aren Rise of the North\Aren\Aren\bin\x86\Debug\databases\Database1_log.LDF
+C:\Aren Rise of the North\Aren\Aren\bin\x86\Debug\databases\ItemsDB.mdf
+C:\Aren Rise of the North\Aren\Aren\bin\x86\Debug\databases\ItemsDB_log.ldf
+C:\Aren Rise of the North\Aren\Aren\bin\x86\Debug\Content\Models\landscape\chunk\#test\chunk.xnb
+C:\Aren Rise of the North\Aren\Aren\bin\x86\Debug\Content\Models\objects\people\baseMan.xnb
+C:\Aren Rise of the North\Aren\Aren\bin\x86\Debug\Content\Models\objects\assets\primitives\cube.xnb
+C:\Aren Rise of the North\Aren\Aren\bin\x86\Debug\Content\Models\landscape\chunk\#test\chunkT.xnb
+C:\Aren Rise of the North\Aren\Aren\bin\x86\Debug\Content\Models\objects\people\baseManT.xnb
+C:\Aren Rise of the North\Aren\Aren\bin\x86\Debug\Content\Images\menus\gameMenu.xnb
+C:\Aren Rise of the North\Aren\Aren\bin\x86\Debug\Content\Images\mouse\defualt.xnb
+C:\Aren Rise of the North\Aren\Aren\bin\x86\Debug\Aren.exe.config
+C:\Aren Rise of the North\Aren\Aren\bin\x86\Debug\Aren.exe
+C:\Aren Rise of the North\Aren\Aren\bin\x86\Debug\Aren.pdb
+C:\Aren Rise of the North\Aren\Aren\bin\x86\Debug\PloobsEngineDebug.xml
+C:\Aren Rise of the North\Aren\Aren\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Aren Rise of the North\Aren\Aren\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Aren Rise of the North\Aren\Aren\obj\x86\Debug\Aren.exe
+C:\Aren Rise of the North\Aren\Aren\obj\x86\Debug\Aren.pdb
+C:\Aren Rise of the North\Aren\Aren\bin\x86\Debug\Content\Images\menus\MainMenu.xnb

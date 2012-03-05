@@ -7,11 +7,11 @@
       <Importer>XImporter</Importer>
       <Processor>ModelProcessor</Processor>
       <Options>None</Options>
-      <Output>V:\Users\Administrator\Documents\Visual Studio 2010\Projects\Aren\Aren\Aren\bin\x86\Debug\Content\Models\landscape\chunk\#test\chunk.xnb</Output>
-      <Time>2012-01-10T20:09:29.2582993-08:00</Time>
+      <Output>C:\Aren Rise of the North\Aren\Aren\bin\x86\Debug\Content\Models\landscape\chunk\#test\chunk.xnb</Output>
+      <Time>2012-03-05T08:46:53.8457417-08:00</Time>
       <Dependency>
         <Key>obj\x86\Debug\Models\landscape\chunk\#test\chunk_0.xml</Key>
-        <Value>2012-02-29T14:27:38.8041387-08:00</Value>
+        <Value>2012-03-05T09:48:17.3218205-08:00</Value>
       </Dependency>
     </Item>
     <Item>
@@ -20,11 +20,11 @@
       <Importer>XImporter</Importer>
       <Processor>ModelProcessor</Processor>
       <Options>None</Options>
-      <Output>V:\Users\Administrator\Documents\Visual Studio 2010\Projects\Aren\Aren\Aren\bin\x86\Debug\Content\Models\objects\people\baseMan.xnb</Output>
-      <Time>2012-01-10T20:09:27.0171711-08:00</Time>
+      <Output>C:\Aren Rise of the North\Aren\Aren\bin\x86\Debug\Content\Models\objects\people\baseMan.xnb</Output>
+      <Time>2012-03-05T08:46:49.4238667-08:00</Time>
       <Dependency>
         <Key>obj\x86\Debug\Models\objects\people\baseMan_0.xml</Key>
-        <Value>2012-02-29T14:27:38.914145-08:00</Value>
+        <Value>2012-03-05T09:48:17.8218237-08:00</Value>
       </Dependency>
     </Item>
     <Item>
@@ -33,11 +33,11 @@
       <Importer>XImporter</Importer>
       <Processor>ModelProcessor</Processor>
       <Options>None</Options>
-      <Output>V:\Users\Administrator\Documents\Visual Studio 2010\Projects\Aren\Aren\Aren\bin\x86\Debug\Content\Models\objects\assets\primitives\cube.xnb</Output>
-      <Time>2012-01-10T20:09:26.6041475-08:00</Time>
+      <Output>C:\Aren Rise of the North\Aren\Aren\bin\x86\Debug\Content\Models\objects\assets\primitives\cube.xnb</Output>
+      <Time>2012-03-05T08:46:49.2051167-08:00</Time>
       <Dependency>
         <Key>obj\x86\Debug\Models\objects\assets\primitives\cube_0.xml</Key>
-        <Value>2012-02-29T14:27:39.00215-08:00</Value>
+        <Value>2012-03-05T09:48:17.8999492-08:00</Value>
       </Dependency>
     </Item>
     <Item>
@@ -46,8 +46,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>V:\Users\Administrator\Documents\Visual Studio 2010\Projects\Aren\Aren\Aren\bin\x86\Debug\Content\Models\landscape\chunk\#test\chunkT.xnb</Output>
-      <Time>2012-01-10T20:09:29.2512989-08:00</Time>
+      <Output>C:\Aren Rise of the North\Aren\Aren\bin\x86\Debug\Content\Models\landscape\chunk\#test\chunkT.xnb</Output>
+      <Time>2012-03-05T08:46:53.8457417-08:00</Time>
     </Item>
     <Item>
       <Source>Models\objects\people\baseManT.png</Source>
@@ -55,8 +55,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>V:\Users\Administrator\Documents\Visual Studio 2010\Projects\Aren\Aren\Aren\bin\x86\Debug\Content\Models\objects\people\baseManT.xnb</Output>
-      <Time>2012-01-10T20:09:27.0391724-08:00</Time>
+      <Output>C:\Aren Rise of the North\Aren\Aren\bin\x86\Debug\Content\Models\objects\people\baseManT.xnb</Output>
+      <Time>2012-03-05T08:46:49.4551167-08:00</Time>
     </Item>
     <Item>
       <Source>Images\menus\gameMenu.png</Source>
@@ -64,8 +64,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>V:\Users\Administrator\Documents\Visual Studio 2010\Projects\Aren\Aren\Aren\bin\x86\Debug\Content\Images\menus\gameMenu.xnb</Output>
-      <Time>2012-01-10T20:09:29.6153197-08:00</Time>
+      <Output>C:\Aren Rise of the North\Aren\Aren\bin\x86\Debug\Content\Images\menus\gameMenu.xnb</Output>
+      <Time>2012-03-05T08:47:02.6269917-08:00</Time>
     </Item>
     <Item>
       <Source>Images\mouse\defualt.png</Source>
@@ -73,29 +73,38 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>V:\Users\Administrator\Documents\Visual Studio 2010\Projects\Aren\Aren\Aren\bin\x86\Debug\Content\Images\mouse\defualt.xnb</Output>
-      <Time>2012-01-10T21:43:19.801348-08:00</Time>
+      <Output>C:\Aren Rise of the North\Aren\Aren\bin\x86\Debug\Content\Images\mouse\defualt.xnb</Output>
+      <Time>2012-03-05T08:47:02.6426167-08:00</Time>
     </Item>
     <Item>
       <Source>Models\landscape\chunk\#test\chunk.x</Source>
       <Importer>XImporter</Importer>
       <Options>IntermediateFile, DontCacheImportedData</Options>
       <Output>obj\x86\Debug\Models\landscape\chunk\#test\chunk_0.xml</Output>
-      <Time>2012-01-10T20:09:29.2582993-08:00</Time>
+      <Time>2012-03-05T08:46:53.8457417-08:00</Time>
     </Item>
     <Item>
       <Source>Models\objects\people\baseMan.x</Source>
       <Importer>XImporter</Importer>
       <Options>IntermediateFile, DontCacheImportedData</Options>
       <Output>obj\x86\Debug\Models\objects\people\baseMan_0.xml</Output>
-      <Time>2012-01-10T20:09:27.0171711-08:00</Time>
+      <Time>2012-03-05T08:46:49.4238667-08:00</Time>
     </Item>
     <Item>
       <Source>Models\objects\assets\primitives\cube.X</Source>
       <Importer>XImporter</Importer>
       <Options>IntermediateFile, DontCacheImportedData</Options>
       <Output>obj\x86\Debug\Models\objects\assets\primitives\cube_0.xml</Output>
-      <Time>2012-01-10T20:09:26.6041475-08:00</Time>
+      <Time>2012-03-05T08:46:49.2051167-08:00</Time>
+    </Item>
+    <Item>
+      <Source>Images\menus\MainMenu.png</Source>
+      <Name>Images\menus\MainMenu</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Aren Rise of the North\Aren\Aren\bin\x86\Debug\Content\Images\menus\MainMenu.xnb</Output>
+      <Time>2012-03-05T10:19:01.5625571-08:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
@@ -103,43 +112,39 @@
       <TargetProfile>HiDef</TargetProfile>
       <BuildConfiguration>Debug</BuildConfiguration>
       <CompressContent>false</CompressContent>
-      <RootDirectory>V:\Users\Administrator\Documents\Visual Studio 2010\Projects\Aren\Aren\ArenContent\</RootDirectory>
-      <LoggerRootDirectory>V:\Users\Administrator\Documents\Visual Studio 2010\Projects\Aren\Aren\Aren\</LoggerRootDirectory>
-      <IntermediateDirectory>V:\Users\Administrator\Documents\Visual Studio 2010\Projects\Aren\Aren\ArenContent\obj\x86\Debug\</IntermediateDirectory>
-      <OutputDirectory>V:\Users\Administrator\Documents\Visual Studio 2010\Projects\Aren\Aren\Aren\bin\x86\Debug\Content\</OutputDirectory>
+      <RootDirectory>C:\Aren Rise of the North\Aren\ArenContent\</RootDirectory>
+      <LoggerRootDirectory>C:\Aren Rise of the North\Aren\Aren\</LoggerRootDirectory>
+      <IntermediateDirectory>C:\Aren Rise of the North\Aren\ArenContent\obj\x86\Debug\</IntermediateDirectory>
+      <OutputDirectory>C:\Aren Rise of the North\Aren\Aren\bin\x86\Debug\Content\</OutputDirectory>
     </Settings>
     <Assemblies>
       <Assembly>
-        <Key>V:\Users\Administrator\Documents\Visual Studio 2010\Projects\Aren\Aren\Aren\include\PloobsEnginePipelineDebug.dll</Key>
-        <Value>2012-01-10T20:09:57.732928-08:00</Value>
+        <Key>C:\Program Files\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.XImporter.dll</Key>
+        <Value>2010-08-23T12:41:18-07:00</Value>
       </Assembly>
       <Assembly>
-        <Key>V:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.XImporter.dll</Key>
-        <Value>2010-08-23T13:41:18-07:00</Value>
+        <Key>C:\Program Files\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.VideoImporters.dll</Key>
+        <Value>2010-08-23T12:41:18-07:00</Value>
       </Assembly>
       <Assembly>
-        <Key>V:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.VideoImporters.dll</Key>
-        <Value>2010-08-23T13:41:18-07:00</Value>
+        <Key>C:\Program Files\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.TextureImporter.dll</Key>
+        <Value>2010-08-23T12:41:18-07:00</Value>
       </Assembly>
       <Assembly>
-        <Key>V:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.TextureImporter.dll</Key>
-        <Value>2010-08-23T13:41:18-07:00</Value>
+        <Key>C:\Program Files\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.FBXImporter.dll</Key>
+        <Value>2010-08-23T12:41:18-07:00</Value>
       </Assembly>
       <Assembly>
-        <Key>V:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.FBXImporter.dll</Key>
-        <Value>2010-08-23T13:41:18-07:00</Value>
+        <Key>C:\Program Files\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.EffectImporter.dll</Key>
+        <Value>2010-08-23T12:41:18-07:00</Value>
       </Assembly>
       <Assembly>
-        <Key>V:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.EffectImporter.dll</Key>
-        <Value>2010-08-23T13:41:18-07:00</Value>
+        <Key>C:\Program Files\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.AudioImporters.dll</Key>
+        <Value>2010-08-23T12:41:18-07:00</Value>
       </Assembly>
       <Assembly>
-        <Key>V:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.AudioImporters.dll</Key>
-        <Value>2010-08-23T13:41:18-07:00</Value>
-      </Assembly>
-      <Assembly>
-        <Key>V:\Windows\Microsoft.Net\assembly\GAC_32\Microsoft.Xna.Framework.Content.Pipeline\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Content.Pipeline.dll</Key>
-        <Value>2011-11-19T07:41:24.5255225-08:00</Value>
+        <Key>C:\WINDOWS\Microsoft.Net\assembly\GAC_32\Microsoft.Xna.Framework.Content.Pipeline\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Content.Pipeline.dll</Key>
+        <Value>2011-09-15T15:10:34.6266922-07:00</Value>
       </Assembly>
     </Assemblies>
   </Asset>

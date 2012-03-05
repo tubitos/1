@@ -3,7 +3,7 @@
   <Asset Type="Graphics:NodeContent">
     <Name>boxFrame</Name>
     <Identity>
-      <SourceFilename>V:\Users\Administrator\Documents\Visual Studio 2010\Projects\Aren\Aren\ArenContent\Models\objects\assets\primitives\cube.X</SourceFilename>
+      <SourceFilename>C:\Aren Rise of the North\Aren\ArenContent\Models\objects\assets\primitives\cube.X</SourceFilename>
       <SourceTool>XImporter</SourceTool>
     </Identity>
     <Transform>1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</Transform>

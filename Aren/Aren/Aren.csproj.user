@@ -12,11 +12,13 @@
     <ProjectView>ProjectFiles</ProjectView>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
-    <StartWorkingDirectory>V:\Users\Administrator\Documents\Visual Studio 2010\Projects\Aren\Aren\Aren\bin\x86\Debug\</StartWorkingDirectory>
-    <StartArguments>true true true true true false 90 1600 900</StartArguments>
+    <StartWorkingDirectory>C:\Aren Rise of the North\Aren\Aren\bin\x86\Debug\</StartWorkingDirectory>
+    <StartArguments>
+    </StartArguments>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
-    <StartWorkingDirectory>V:\Users\Administrator\Documents\Visual Studio 2010\Projects\Aren\Aren\Aren\bin\x86\Debug\</StartWorkingDirectory>
-    <StartArguments>true true true true true false 90 1600 900</StartArguments>
+    <StartWorkingDirectory>C:\Aren Rise of the North\Aren\Aren\bin\x86\Debug\</StartWorkingDirectory>
+    <StartArguments>
+    </StartArguments>
   </PropertyGroup>
 </Project>

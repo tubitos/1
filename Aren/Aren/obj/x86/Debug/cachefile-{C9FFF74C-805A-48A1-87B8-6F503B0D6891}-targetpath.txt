@@ -5,3 +5,4 @@ Content\Models\landscape\chunk\#test\chunkT.xnb
 Content\Models\objects\people\baseManT.xnb
 Content\Images\menus\gameMenu.xnb
 Content\Images\mouse\defualt.xnb
+Content\Images\menus\MainMenu.xnb

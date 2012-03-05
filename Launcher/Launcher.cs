@@ -6,7 +6,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
-using PloobsGame;
+using Aren;
 using System.Threading;
 
 namespace Launcher
@@ -18,7 +18,7 @@ namespace Launcher
 
 		private static void gameStart ()
 		{
-			PloobsGame.Program.Main (args);
+			Aren.Program.Main (args);
 		}
 
 		public Launcher ()
@@ -50,7 +50,7 @@ namespace Launcher
 
 			this.Hide ();
 
-			while (thread.IsAlive) ;
+			//while (thread.IsAlive) ;
 
 			Application.Exit ();
 		}
