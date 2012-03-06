@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Aren.menu.components
 {
-	class MouseOverEventArgs
+	class MouseOverEventArgs : EventArgs
 	{
 	}
 }
