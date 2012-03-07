@@ -8,7 +8,6 @@ using Microsoft.Xna.Framework.Input;
 using PloobsEngine.Input;
 using PloobsEngine.Commands;
 using PloobsEngine.MessageSystem;
-using Aren.engine.menus;
 using Aren.engine.settings.properties;
 
 namespace Aren
@@ -51,19 +50,17 @@ namespace Aren
 			
 		}
 
-		GameMenu gameMenu;
-
 		void GameMenu (InputPlayableKeyBoard ipk)
 		{
-			if (gameMenu == null)
-			{
-				gameMenu = new GameMenu ();
-				ScreenManager.AddScreen (gameMenu);
-			}
-			else
-			{
-				gameMenu.active = !gameMenu.active;
-			}
+			//if (gameMenu == null)
+			//{
+			//    gameMenu = new GameMenu ();
+			//    ScreenManager.AddScreen (gameMenu);
+			//}
+			//else
+			//{
+			//    gameMenu.active = !gameMenu.active;
+			//}
 		}
 
 		Saver saver = new Saver ();
