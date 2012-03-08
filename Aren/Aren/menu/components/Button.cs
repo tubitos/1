@@ -14,6 +14,7 @@ namespace Aren.menu.components
 		public float width;
 		public float height;
 		public String text;
+		Boolean clicked;
 
 		public Button ()
 			: this (0, 0, 1, 1)
@@ -62,11 +63,8 @@ namespace Aren.menu.components
 			return true;
 		}
 
-		public void Update ()
+		public void Update (MouseState mstate)
 		{
-			MouseState mstate = InputStates.mstate;
-			MouseState omstate = InputStates.omstate;
-
 			if (WithinBounds(mstate.X, mstate.Y))
 			{
 				MouseOver(this, new MouseOverEventArgs());
@@ -74,17 +72,19 @@ namespace Aren.menu.components
 				if (mstate.LeftButton == ButtonState.Pressed)
 				{
 					MouseDown(this, new MouseDownEventArgs());
+					clicked = true;
+				}
 
-					if (omstate.LeftButton == ButtonState.Released)
-					{
-						Click(this, new ButtonClickEventArgs());
-					}
+				if (clicked && mstate.LeftButton == ButtonState.Released)
+				{
+					clicked = false;
+					Click(this, new ButtonClickEventArgs());
 				}
 			}
 		}
 
-		public static event EventHandler Click;
-		public static event EventHandler MouseOver;
-		public static event EventHandler MouseDown;
+		public event EventHandler Click;
+		public event EventHandler MouseOver;
+		public event EventHandler MouseDown;
 	}
 }

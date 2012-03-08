@@ -11,6 +11,7 @@ using Microsoft.Xna.Framework.Media;
 using PloobsEngine.Engine;
 using PloobsEngine.SceneControl;
 using System.Threading;
+using Aren.menu;
 
 namespace Aren
 {
@@ -21,7 +22,7 @@ namespace Aren
 		SpriteBatch spriteBatch;
 		Thread thread = new Thread(new ThreadStart(Play));
 
-		Texture2D image;
+		MainMenu mainMenu;
 
 		public Entry ()
 		{
@@ -30,6 +31,8 @@ namespace Aren
 			enabled = false;
 
 			Window.Title = "Aren: Rise of the North";
+
+			mainMenu = new MainMenu();
 		}
 
 		protected override void Initialize ()
@@ -46,14 +49,18 @@ namespace Aren
 		{
 			spriteBatch = new SpriteBatch(GraphicsDevice);
 
-			image = Content.Load<Texture2D>("Images//menus//MainMenu");
+			mainMenu.LoadContent(Content);
 		}
+
+		MouseState mstate;
+		KeyboardState kstate;
 
 		protected override void Update (GameTime gameTime)
 		{
 			if (enabled)
 			{
-				KeyboardState kstate = Keyboard.GetState();
+				kstate = Keyboard.GetState();
+				mstate = Mouse.GetState();
 
 				if (kstate.IsKeyDown(Keys.Escape))
 				{
@@ -65,6 +72,8 @@ namespace Aren
 					thread.Start();
 					enabled = false;
 				}
+
+				mainMenu.Update(gameTime, kstate, mstate);
 
 				base.Update(gameTime);
 			}
@@ -82,7 +91,9 @@ namespace Aren
 			GraphicsDevice.Clear(Color.Black);
 
 			spriteBatch.Begin(SpriteSortMode.Deferred, BlendState.Additive);
-			spriteBatch.Draw(image, Vector2.Zero, Color.White);
+
+			mainMenu.Draw(spriteBatch);
+
 			spriteBatch.End();
 
 			base.Draw(gameTime);
