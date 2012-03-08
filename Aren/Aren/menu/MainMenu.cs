@@ -2,41 +2,81 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using PloobsEngine.SceneControl;
-using PloobsEngine.Physic2D.Farseer;
-using PloobsEngine.Physics;
+using Microsoft.Xna.Framework.Graphics;
+using Aren.menu.components;
+using Microsoft.Xna.Framework.Content;
 using Microsoft.Xna.Framework;
-using PloobsEngine.SceneControl._2DScene;
-using PloobsEngine.Particles;
+using Microsoft.Xna.Framework.Input;
 
 namespace Aren.menu
 {
-	public class MainMenu : I2DScene
+	class MainMenu : Menu
 	{
-		protected override void SetWorldAndRenderTechnich (out RenderTechnich2D renderTech, out I2DWorld world)
+		List<Button> buttons;
+
+		Button play;
+		Button exit;
+
+		public MainMenu ()
 		{
-			world = new I2DWorld(new FarseerWorld(new Vector2(0, -1)));
-			renderTech = new Basic2DRenderTechnich();
+			buttons = new List<Button>();
+
+			//button positions
+			//(607, 594)
+			//(641, 666)
+			//(660, 738)
+			//(675, 810)
+			//(655, 882)
+
+			play = new Button(607, 594, 162, 46);
+			exit = new Button(655, 882, 162, 46);
+			play.text = "Play";
+			exit.text = "Quit";
+
+			play.Click += new EventHandler(play_Click);
+			exit.Click += new EventHandler(exit_Click);
+
+			buttons.Add(play);
+			buttons.Add(exit);
 		}
 
-		protected override void InitScreen (PloobsEngine.Engine.GraphicInfo GraphicInfo, PloobsEngine.Engine.EngineStuff engine)
+		void play_Click (object sender, EventArgs e)
 		{
-			base.InitScreen(GraphicInfo, engine);
+			
 		}
 
-		protected override void LoadContent (PloobsEngine.Engine.GraphicInfo GraphicInfo, PloobsEngine.Engine.GraphicFactory factory, IContentManager contentManager)
+		void exit_Click (object sender, EventArgs e)
 		{
-			base.LoadContent(GraphicInfo, factory, contentManager);
+			
 		}
 
-		protected override void Update (Microsoft.Xna.Framework.GameTime gameTime)
+		public override void LoadContent (ContentManager content)
 		{
-			base.Update(gameTime);
+			texture = content.Load<Texture2D>("Images\\menus\\MainMenu");
+
+			base.LoadContent(content);
 		}
 
-		protected override void Draw (Microsoft.Xna.Framework.GameTime gameTime, RenderHelper render)
+		public override void Update (GameTime gameTime, KeyboardState kstate, MouseState mstate)
 		{
-			base.Draw(gameTime, render);
+			foreach (Button b in buttons)
+			{
+				b.Update(mstate);
+			}
+
+			//base.Update(gameTime, kstate, mstate);
+		}
+
+		public override void Draw (SpriteBatch spriteBatch)
+		{
+			foreach (Button b in buttons)
+			{
+				spriteBatch.DrawString(starFont, b.text, b.position, Color.DarkRed);
+			}
+			
+			spriteBatch.DrawString(starFont, "Aren: Rise of the North", new Vector2(450, 40), Color.DarkRed);
+
+			base.Draw(spriteBatch);
 		}
 	}
 }
