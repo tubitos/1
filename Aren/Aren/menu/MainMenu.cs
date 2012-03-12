@@ -71,10 +71,10 @@ namespace Aren.menu
 		{
 			foreach (Button b in buttons)
 			{
-				spriteBatch.DrawString(starFont, b.text, b.position, Color.DarkRed);
+				spriteBatch.DrawString(arenScript, b.text, b.position, Color.DarkRed);
 			}
-			
-			spriteBatch.DrawString(starFont, "Aren: Rise of the North", new Vector2(450, 40), Color.DarkRed);
+
+			spriteBatch.DrawString(arenScript, "Aren: Rise of the North", new Vector2(450, 40), Color.DarkRed);
 
 			base.Draw(spriteBatch);
 		}

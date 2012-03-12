@@ -17,11 +17,11 @@ namespace Aren.menu
 	public class Menu
 	{
 		protected Texture2D texture;
-		protected SpriteFont starFont;
+		protected SpriteFont arenScript;
 
 		public virtual void LoadContent (ContentManager content)
 		{
-			starFont = content.Load<SpriteFont>("Images\\font\\StarFont");
+			arenScript = content.Load<SpriteFont>("Images\\font\\ArenScriptFont");
 		}
 
 		public virtual void Update (GameTime gameTime, KeyboardState kstate, MouseState mstate)
