@@ -67,18 +67,29 @@ namespace Aren.menu.components
 		{
 			if (WithinBounds(mstate.X, mstate.Y))
 			{
-				MouseOver(this, new MouseOverEventArgs());
+				if (MouseOver != null)
+				{
+					MouseOver(this, new MouseOverEventArgs());
+				}
 
 				if (mstate.LeftButton == ButtonState.Pressed)
 				{
-					MouseDown(this, new MouseDownEventArgs());
+					if (MouseDown != null)
+					{
+						MouseDown(this, new MouseDownEventArgs());
+					}
+					
 					clicked = true;
 				}
 
 				if (clicked && mstate.LeftButton == ButtonState.Released)
 				{
 					clicked = false;
-					Click(this, new ButtonClickEventArgs());
+
+					if (Click != null)
+					{
+						Click(this, new ButtonClickEventArgs());
+					}
 				}
 			}
 		}

@@ -6,3 +6,5 @@ Content\Models\objects\people\baseManT.xnb
 Content\Images\menus\gameMenu.xnb
 Content\Images\mouse\defualt.xnb
 Content\Images\menus\MainMenu.xnb
+Content\Images\font\ArenScriptFont.xnb
+Content\Images\font\ArenMagiFont.xnb

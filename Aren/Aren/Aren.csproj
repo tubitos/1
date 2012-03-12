@@ -130,10 +130,6 @@
     <Compile Include="engine\land\world\World.cs" />
     <Compile Include="engine\land\world\WorldManager.cs" />
     <Compile Include="engine\Materials.cs" />
-    <Compile Include="engine\menus\components\Button.cs" />
-    <Compile Include="engine\menus\HUD.cs" />
-    <Compile Include="engine\menus\Inventory.cs" />
-    <Compile Include="engine\menus\GameMenu.cs" />
     <Compile Include="engine\objects\BaseModel.cs" />
     <Compile Include="engine\entity\mob\people\Person.cs" />
     <Compile Include="engine\land\chunk\Chunk.cs" />
@@ -152,6 +148,8 @@
     <Compile Include="menu\components\ButtonClickEventArgs.cs" />
     <Compile Include="menu\components\MouseDownEventArgs.cs" />
     <Compile Include="menu\components\MouseOverEventArgs.cs" />
+    <Compile Include="menu\MainMenu.cs" />
+    <Compile Include="menu\Menu.cs" />
     <Compile Include="PickingScreen.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Program.cs" />
