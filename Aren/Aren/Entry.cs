@@ -29,10 +29,12 @@ namespace Aren
 			graphics = new GraphicsDeviceManager(this);
 			Content.RootDirectory = "Content";
 			enabled = false;
+			this.IsMouseVisible = true;
 
 			Window.Title = "Aren: Rise of the North";
 
 			mainMenu = new MainMenu();
+			mainMenu.ChangeState += new EventHandler(menuStateChange);
 		}
 
 		protected override void Initialize ()
@@ -66,11 +68,10 @@ namespace Aren
 				{
 					Exit();
 				}
-
+				
 				if (kstate.IsKeyDown(Keys.F1))
 				{
-					thread.Start();
-					enabled = false;
+					graphics.ToggleFullScreen();
 				}
 
 				mainMenu.Update(gameTime, kstate, mstate);
@@ -79,7 +80,7 @@ namespace Aren
 			}
 			else
 			{
-				if (!thread.IsAlive)
+				if (thread.IsAlive)
 				{
 					Exit();
 				}
@@ -100,6 +101,17 @@ namespace Aren
 
 		}
 
+		void Start ()
+		{
+			if (graphics.IsFullScreen)
+			{
+				graphics.ToggleFullScreen();
+			}
+			
+			enabled = false;
+			thread.Start();
+		}
+
 		static InitialEngineDescription desc = InitialEngineDescription.Default();
 		static EngineStuff engine;
 
@@ -114,7 +126,7 @@ namespace Aren
 
 			desc.BackBufferWidth = 800;//int.Parse(args[7]);
 			desc.BackBufferHeight = 600;//int.Parse(args[8]);
-
+			
 			engine = new EngineStuff(ref desc, LoadScreen);
 			engine.Run();
 		}
@@ -123,6 +135,40 @@ namespace Aren
 		{
 			screenManager.AddScreen(new Level());
 			screenManager.AddScreen(new InputManager());
+		}
+
+		void menuStateChange (object sender, EventArgs e)
+		{
+			if (e is MenuStateEventArgs)
+			{
+				MenuStateEventArgs m = e as MenuStateEventArgs;
+
+				switch (m.state)
+				{
+					case MenuStateEventArgs.states.main:
+						break;
+
+					case MenuStateEventArgs.states.play:
+						Start();
+						break;
+
+					case MenuStateEventArgs.states.cont:
+						break;
+						
+					case MenuStateEventArgs.states.load:
+						break;
+
+					case MenuStateEventArgs.states.save:
+						break;
+
+					case MenuStateEventArgs.states.options:
+						break;
+
+					case MenuStateEventArgs.states.exit:
+						Exit();
+						break;
+				}
+			}
 		}
 	}
 }

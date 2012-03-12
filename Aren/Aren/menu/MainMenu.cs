@@ -22,14 +22,14 @@ namespace Aren.menu
 			buttons = new List<Button>();
 
 			//button positions
-			//(607, 594)
-			//(641, 666)
-			//(660, 738)
-			//(675, 810)
-			//(655, 882)
+			//(617, 594)
+			//(651, 666)
+			//(670, 738)
+			//(685, 810)
+			//(665, 882)
 
-			play = new Button(607, 594, 162, 46);
-			exit = new Button(655, 882, 162, 46);
+			play = new Button(617, 594, 162, 46);
+			exit = new Button(665, 882, 162, 46);
 			play.text = "Play";
 			exit.text = "Quit";
 
@@ -42,12 +42,12 @@ namespace Aren.menu
 
 		void play_Click (object sender, EventArgs e)
 		{
-			
+			onStateChange(MenuStateEventArgs.states.play);
 		}
 
 		void exit_Click (object sender, EventArgs e)
 		{
-			
+			onStateChange(MenuStateEventArgs.states.exit);
 		}
 
 		public override void LoadContent (ContentManager content)
@@ -78,5 +78,15 @@ namespace Aren.menu
 
 			base.Draw(spriteBatch);
 		}
+
+		void onStateChange (MenuStateEventArgs.states changeTo)
+		{
+			if (ChangeState != null)
+			{
+				ChangeState(this, new MenuStateEventArgs(changeTo));
+			}
+		}
+
+		public event EventHandler ChangeState;
 	}
 }
