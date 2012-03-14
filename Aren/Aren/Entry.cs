@@ -15,117 +15,44 @@ using Aren.menu;
 
 namespace Aren
 {
-	public class Entry : Game
+	public class Entry
 	{
-		public Boolean enabled;
-		GraphicsDeviceManager graphics;
-		SpriteBatch spriteBatch;
-		Thread thread = new Thread(new ThreadStart(Play));
-
-		MainMenu mainMenu;
-
-		public Entry ()
+		public static void Main (String[] args)
 		{
-			graphics = new GraphicsDeviceManager(this);
-			Content.RootDirectory = "Content";
-			enabled = false;
-			this.IsMouseVisible = true;
-
-			Window.Title = "Aren: Rise of the North";
-
-			mainMenu = new MainMenu();
-			mainMenu.ChangeState += new EventHandler(menuStateChange);
-		}
-
-		protected override void Initialize ()
-		{
-			base.Initialize();
-			enabled = true;
-
-			graphics.PreferredBackBufferHeight = 960;
-			graphics.PreferredBackBufferWidth = 1280;
-			graphics.ApplyChanges();
-		}
-
-		protected override void LoadContent ()
-		{
-			spriteBatch = new SpriteBatch(GraphicsDevice);
-
-			mainMenu.LoadContent(Content);
-		}
-
-		MouseState mstate;
-		KeyboardState kstate;
-
-		protected override void Update (GameTime gameTime)
-		{
-			if (enabled)
+			if (args.Contains<String>("-windowed"))
 			{
-				kstate = Keyboard.GetState();
-				mstate = Mouse.GetState();
-
-				if (kstate.IsKeyDown(Keys.Escape))
-				{
-					Exit();
-				}
-				
-				if (kstate.IsKeyDown(Keys.F1))
-				{
-					graphics.ToggleFullScreen();
-				}
-
-				mainMenu.Update(gameTime, kstate, mstate);
-
-				base.Update(gameTime);
+				Play(true);
 			}
 			else
 			{
-				if (thread.IsAlive)
-				{
-					Exit();
-				}
+				Play(false);
 			}
 		}
 
-		protected override void Draw (GameTime gameTime)
-		{
-			GraphicsDevice.Clear(Color.Black);
-
-			spriteBatch.Begin(SpriteSortMode.Deferred, BlendState.Additive);
-
-			mainMenu.Draw(spriteBatch);
-
-			spriteBatch.End();
-
-			base.Draw(gameTime);
-
-		}
-
-		void Start ()
-		{
-			if (graphics.IsFullScreen)
-			{
-				graphics.ToggleFullScreen();
-			}
-			
-			enabled = false;
-			thread.Start();
-		}
-
-		static InitialEngineDescription desc = InitialEngineDescription.Default();
+		static InitialEngineDescription desc;
 		static EngineStuff engine;
 
-		public static void Play ()
+		public static void Play (Boolean windowed)
 		{
 			//desc.UseAnisotropicFiltering = Boolean.Parse(args[0]);
 			//desc.isFixedGameTime = Boolean.Parse(args[1]);
 			//desc.useMipMapWhenPossible = Boolean.Parse(args[2]);
 			//desc.isMultiSampling = Boolean.Parse(args[3]);
 			//desc.UseVerticalSyncronization = Boolean.Parse(args[4]);
-			//desc.isFullScreen = Boolean.Parse(args[5]);
 
-			desc.BackBufferWidth = 800;//int.Parse(args[7]);
-			desc.BackBufferHeight = 600;//int.Parse(args[8]);
+			desc = InitialEngineDescription.Default();
+			desc.isFullScreen = !windowed;
+
+			if (!windowed)
+			{
+				desc.BackBufferWidth = GraphicsAdapter.DefaultAdapter.CurrentDisplayMode.Width;
+				desc.BackBufferHeight = GraphicsAdapter.DefaultAdapter.CurrentDisplayMode.Height;
+			}
+			else
+			{
+				desc.BackBufferWidth = 1280;
+				desc.BackBufferHeight = 960;
+			}
 			
 			engine = new EngineStuff(ref desc, LoadScreen);
 			engine.Run();
@@ -133,42 +60,44 @@ namespace Aren
 
 		static void LoadScreen (ScreenManager screenManager)
 		{
-			screenManager.AddScreen(new Level());
-			screenManager.AddScreen(new InputManager());
+			screenManager.AddScreen(screens.mainMenu);
+
+			//screenManager.AddScreen(new Level());
+			//screenManager.AddScreen(new InputManager());
 		}
 
-		void menuStateChange (object sender, EventArgs e)
-		{
-			if (e is MenuStateEventArgs)
-			{
-				MenuStateEventArgs m = e as MenuStateEventArgs;
+		//void menuStateChange (object sender, EventArgs e)
+		//{
+		//    if (e is MenuStateEventArgs)
+		//    {
+		//        MenuStateEventArgs m = e as MenuStateEventArgs;
 
-				switch (m.state)
-				{
-					case MenuStateEventArgs.states.main:
-						break;
+		//        switch (m.state)
+		//        {
+		//            case MenuStateEventArgs.states.main:
+		//                break;
 
-					case MenuStateEventArgs.states.play:
-						Start();
-						break;
+		//            case MenuStateEventArgs.states.play:
+		//                Start();
+		//                break;
 
-					case MenuStateEventArgs.states.cont:
-						break;
+		//            case MenuStateEventArgs.states.cont:
+		//                break;
 						
-					case MenuStateEventArgs.states.load:
-						break;
+		//            case MenuStateEventArgs.states.load:
+		//                break;
 
-					case MenuStateEventArgs.states.save:
-						break;
+		//            case MenuStateEventArgs.states.save:
+		//                break;
 
-					case MenuStateEventArgs.states.options:
-						break;
+		//            case MenuStateEventArgs.states.options:
+		//                break;
 
-					case MenuStateEventArgs.states.exit:
-						Exit();
-						break;
-				}
-			}
-		}
+		//            case MenuStateEventArgs.states.exit:
+		//                Exit();
+		//                break;
+		//        }
+		//    }
+		//}
 	}
 }

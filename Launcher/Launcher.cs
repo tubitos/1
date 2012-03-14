@@ -18,7 +18,7 @@ namespace Launcher
 
 		private static void gameStart ()
 		{
-			Aren.Program.Main (args);
+			//Aren.Program.Main (args);
 		}
 
 		public Launcher ()

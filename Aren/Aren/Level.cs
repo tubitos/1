@@ -18,7 +18,7 @@ using Aren.engine.settings;
 
 namespace Aren
 {
-	class Level : IScene
+	public class Level : IScene
 	{
 
 		//
