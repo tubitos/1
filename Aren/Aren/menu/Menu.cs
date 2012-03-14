@@ -11,27 +11,51 @@ using PloobsEngine.Particles;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Content;
 using Microsoft.Xna.Framework.Input;
+using PloobsEngine.Physic2D;
+using PloobsEngine.Engine;
 
 namespace Aren.menu
 {
-	public class Menu
+	public class Menu : IScreen
 	{
-		protected Texture2D texture;
+		protected Texture2D backT;
+		protected Texture2D mouseT;
 		protected SpriteFont arenScript;
+		protected EngineStuff engine;
+		protected MouseState mstate;
+		public static Boolean drawBackground;
 
-		public virtual void LoadContent (ContentManager content)
+		protected override void InitScreen (PloobsEngine.Engine.GraphicInfo GraphicInfo, PloobsEngine.Engine.EngineStuff engine)
 		{
-			arenScript = content.Load<SpriteFont>("Images\\font\\ArenScriptFont");
+			mstate = Mouse.GetState();
+			this.engine = engine;
+
+			base.InitScreen(GraphicInfo, engine);
 		}
 
-		public virtual void Update (GameTime gameTime, KeyboardState kstate, MouseState mstate)
+		protected override void LoadContent (GraphicInfo GraphicInfo, GraphicFactory factory, IContentManager contentManager)
 		{
+			mouseT = contentManager.GetAsset<Texture2D>("Images//mouse//defualt");
 
+			base.LoadContent(GraphicInfo, factory, contentManager);
 		}
 
-		public virtual void Draw (SpriteBatch spriteBatch)
+		protected override void Update (GameTime gameTime)
 		{
-			spriteBatch.Draw(texture, Vector2.Zero, Color.White);
+			base.Update(gameTime);
+
+			mstate = Mouse.GetState();
+		}
+
+		protected override void Draw (GameTime gameTime, RenderHelper render)
+		{
+			if (drawBackground)
+			{
+				int w = render.GetViewPort().Width;
+				int h = render.GetViewPort().Height;
+
+				render.RenderTextureComplete(backT, Color.White, new Rectangle(0, 0, w, h), Matrix.Identity); 
+			}
 		}
 	}
 }

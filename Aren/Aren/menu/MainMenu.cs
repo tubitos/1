@@ -10,26 +10,26 @@ using Microsoft.Xna.Framework.Input;
 
 namespace Aren.menu
 {
-	class MainMenu : Menu
+	public class MainMenu : Menu
 	{
 		List<Button> buttons;
 
 		Button play;
 		Button exit;
 
-		public MainMenu ()
+		public void Init ()
 		{
 			buttons = new List<Button>();
 
 			//button positions
-			//(617, 594)
-			//(651, 666)
-			//(670, 738)
-			//(685, 810)
-			//(665, 882)
+			//(627, 594)
+			//(661, 666)
+			//(680, 738)
+			//(695, 810)
+			//(675, 882)
 
-			play = new Button(617, 594, 162, 46);
-			exit = new Button(665, 882, 162, 46);
+			play = new Button(627, 594, 162, 46);
+			exit = new Button(675, 882, 162, 46);
 			play.text = "Play";
 			exit.text = "Quit";
 
@@ -42,51 +42,51 @@ namespace Aren.menu
 
 		void play_Click (object sender, EventArgs e)
 		{
-			onStateChange(MenuStateEventArgs.states.play);
+			//Add loading screen first, but for now
+			ScreenManager.AddScreen(screens.level, screens.loadingScreen);
+			ScreenManager.RemoveScreen(this);
 		}
 
 		void exit_Click (object sender, EventArgs e)
 		{
-			onStateChange(MenuStateEventArgs.states.exit);
+			engine.Exit();
 		}
 
-		public override void LoadContent (ContentManager content)
+		protected override void LoadContent (PloobsEngine.Engine.GraphicInfo GraphicInfo, PloobsEngine.Engine.GraphicFactory factory, PloobsEngine.SceneControl.IContentManager contentManager)
 		{
-			texture = content.Load<Texture2D>("Images\\menus\\MainMenu");
+			arenScript = contentManager.GetAsset<SpriteFont>("Images//font//ArenScriptFont");
+			backT = contentManager.GetAsset<Texture2D>("Images//menus//MainMenu");
+			drawBackground = true;
 
-			base.LoadContent(content);
+			Init();
+
+			base.LoadContent(GraphicInfo, factory, contentManager);
 		}
 
-		public override void Update (GameTime gameTime, KeyboardState kstate, MouseState mstate)
+		protected override void Update (GameTime gameTime)
 		{
+			base.Update(gameTime);
+			
 			foreach (Button b in buttons)
 			{
 				b.Update(mstate);
 			}
-
-			//base.Update(gameTime, kstate, mstate);
 		}
 
-		public override void Draw (SpriteBatch spriteBatch)
+		protected override void Draw (GameTime gameTime, PloobsEngine.SceneControl.RenderHelper render)
 		{
+			base.Draw(gameTime, render);
+
+			render.RenderBegin(Matrix.Identity);
+
 			foreach (Button b in buttons)
 			{
-				spriteBatch.DrawString(arenScript, b.text, b.position, Color.DarkRed);
+				render.RenderText(b.text, b.position, Vector2.One, Color.DarkRed, arenScript);
 			}
 
-			spriteBatch.DrawString(arenScript, "Aren: Rise of the North", new Vector2(450, 40), Color.DarkRed);
+			render.RenderTexture(mouseT, Color.White, new Rectangle(mstate.X, mstate.Y, 10, 10));
 
-			base.Draw(spriteBatch);
+			render.RenderEnd();
 		}
-
-		void onStateChange (MenuStateEventArgs.states changeTo)
-		{
-			if (ChangeState != null)
-			{
-				ChangeState(this, new MenuStateEventArgs(changeTo));
-			}
-		}
-
-		public event EventHandler ChangeState;
 	}
 }
