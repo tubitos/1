@@ -19,8 +19,8 @@ namespace Aren.engine.entity.mob.people.player
 {
 	class Player : Person
 	{
-		CameraFollowObject tpCam;
-		CameraFirstPerson fpCam;
+		//CameraFollowObject tpCam;
+		CameraFirstPerson camera;
 
 		MouseState bstate;
 
@@ -30,17 +30,18 @@ namespace Aren.engine.entity.mob.people.player
 		Boolean isActive = true;
 		Boolean useMouse = true;
 		float rotSpeed;
+		float zoomDistance;
 
 		public float viewDistance
 		{
 			get
 			{
-				return tpCam.FarPlane;
+				return camera.FarPlane;
 			}
 
 			set
 			{
-				tpCam.FarPlane = value;
+				camera.FarPlane = value;
 			}
 		}
 
@@ -48,12 +49,12 @@ namespace Aren.engine.entity.mob.people.player
 		{
 			get
 			{
-				return tpCam.FieldOfView;
+				return camera.FieldOfView;
 			}
 
 			set
 			{
-				tpCam.FieldOfView = value;
+				camera.FieldOfView = value;
 			}
 		}
 
@@ -72,17 +73,20 @@ namespace Aren.engine.entity.mob.people.player
 			bstate = Mouse.GetState ();
 
 			rotSpeed = 0.05F;
+			zoomDistance = 50;
+
+			camera = new CameraFirstPerson(false, EngineSettings.graphicInfo);
+			camera.FarPlane = 2000.0F;
+
+			SetCameraPositionRotation();
 
 			if (useThirdPerson)
 			{
-				tpCam = new CameraFollowObject (obj, -50, 50);
-				tpCam.FarPlane = 2000.0F;
-				tpCam.YAlwaysUp = true;
+				
 			}
 			else
 			{
-				fpCam = new CameraFirstPerson (true, charecter.Position, EngineSettings.graphicInfo);
-				fpCam.FarPlane = 10000.0F;
+				
 			}
 
 			this.Start ();
@@ -109,12 +113,41 @@ namespace Aren.engine.entity.mob.people.player
 
 		public ICamera GetCamera ()
 		{
-			return tpCam;
+			return camera;
 		}
 
 		public IObject GetObject ()
 		{
 			return obj;
+		}
+
+		void SetCameraPositionRotation ()
+		{
+			Quaternion q = Quaternion.CreateFromRotationMatrix (charecter.Rotation);
+
+			float rot = (float)((q.Y + 0) * Math.PI);
+
+			Console.WriteLine(q.Y + "    " + rot);
+
+			camera.LeftRightRot = rot;
+			camera.UpDownRot = camRot;
+			
+			float faceL = charecter.FaceVector.Length();
+
+			float a1 = (float)(Math.Sin(rot) * faceL);
+			float b1 = (float)(Math.Cos(rot) * faceL);
+
+			float sf = zoomDistance / faceL;
+			float offx = a1 * sf;
+			float offz = b1 * sf;
+
+			Vector3 camPos = camera.Position;
+
+			camPos.X = charecter.Position.X - offx;
+			camPos.Z = charecter.Position.Z - offz;
+			camPos.Y = 10;
+
+			camera.Position = camPos;
 		}
 
 		float hRot = 0.0F;
@@ -126,6 +159,8 @@ namespace Aren.engine.entity.mob.people.player
 			base.Update (gameTime);
 
 			isActive = !EngineSettings.freeMouse;
+
+			Console.WriteLine(charecter.Position.X + "    " + charecter.Position.Z);
 
 			if (isActive)
 			{
@@ -147,8 +182,10 @@ namespace Aren.engine.entity.mob.people.player
 
 					camRot -= MathHelper.ToRadians (vRot);
 
-					tpCam.Cimaoffset = (int)(Math.Sin ((Double)camRot) * 50);
-					tpCam.Trasoffset = -(int)(Math.Cos ((Double)camRot) * 50);
+					SetCameraPositionRotation();
+
+					//tpCam.Cimaoffset = (int)(Math.Sin ((Double)camRot) * 50);
+					//tpCam.Trasoffset = -(int)(Math.Cos ((Double)camRot) * 50);
 				}
 
 				Vector2 totalMovement = Vector2.Zero;
@@ -188,7 +225,7 @@ namespace Aren.engine.entity.mob.people.player
 				else
 				{
 					charecter.MoveToDirection (Vector2.Normalize (totalMovement));
-
+					
 					Quaternion q = Quaternion.CreateFromRotationMatrix (charecter.Rotation);
 					PlayerMove (this, new PlayerMoveEventArgs (charecter.Position, new Vector3 (q.X, q.Y, q.Z), Vector3.Normalize (charecter.FaceVector)));
 				}

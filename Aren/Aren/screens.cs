@@ -9,6 +9,7 @@ namespace Aren
 	public static class screens
 	{
 		public static Level level = new Level();
+		public static InputManager inputs = new InputManager();
 
 		public static LoadingScreen loadingScreen = new LoadingScreen();
 
