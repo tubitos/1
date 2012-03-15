@@ -13,6 +13,7 @@ using Microsoft.Xna.Framework.Content;
 using Microsoft.Xna.Framework.Input;
 using PloobsEngine.Physic2D;
 using PloobsEngine.Engine;
+using PloobsEngine.SceneControl.GUI;
 
 namespace Aren.menu
 {
@@ -23,7 +24,18 @@ namespace Aren.menu
 		protected SpriteFont arenScript;
 		protected EngineStuff engine;
 		protected MouseState mstate;
-		public static Boolean drawBackground;
+		public Boolean drawBackground;
+
+		public Menu ()
+		{
+
+		}
+
+		public Menu (IGui gui)
+			: base(gui)
+		{
+
+		}
 
 		protected override void InitScreen (PloobsEngine.Engine.GraphicInfo GraphicInfo, PloobsEngine.Engine.EngineStuff engine)
 		{

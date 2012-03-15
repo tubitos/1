@@ -13,5 +13,6 @@ namespace Aren
 		public static LoadingScreen loadingScreen = new LoadingScreen();
 
 		public static MainMenu mainMenu = new MainMenu();
+		public static Options options = new Options();
 	}
 }

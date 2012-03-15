@@ -15,6 +15,7 @@ namespace Aren.menu
 		List<Button> buttons;
 
 		Button play;
+		Button options;
 		Button exit;
 
 		public void Init ()
@@ -29,15 +30,24 @@ namespace Aren.menu
 			//(675, 882)
 
 			play = new Button(627, 594, 162, 46);
+			options = new Button(695, 810, 162, 46);
 			exit = new Button(675, 882, 162, 46);
 			play.text = "Play";
+			options.text = "Options";
 			exit.text = "Quit";
 
 			play.Click += new EventHandler(play_Click);
+			options.Click += new EventHandler(options_Click);
 			exit.Click += new EventHandler(exit_Click);
 
 			buttons.Add(play);
+			buttons.Add(options);
 			buttons.Add(exit);
+		}
+
+		void options_Click (object sender, EventArgs e)
+		{
+			ScreenManager.AddScreen(screens.options);
 		}
 
 		void play_Click (object sender, EventArgs e)
