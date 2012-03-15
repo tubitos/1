@@ -9,10 +9,11 @@ using PloobsEngine.Input;
 using PloobsEngine.Commands;
 using PloobsEngine.MessageSystem;
 using Aren.engine.settings.properties;
+using Aren.engine.settings;
 
 namespace Aren
 {
-	class InputManager : IScreen
+	public class InputManager : IScreen
 	{
 		EngineStuff engine;
 
@@ -52,6 +53,8 @@ namespace Aren
 
 		void GameMenu (InputPlayableKeyBoard ipk)
 		{
+			EngineSettings.freeMouse = !EngineSettings.freeMouse;
+
 			//if (gameMenu == null)
 			//{
 			//    gameMenu = new GameMenu ();

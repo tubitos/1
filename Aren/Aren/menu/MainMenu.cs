@@ -54,6 +54,7 @@ namespace Aren.menu
 		{
 			//Add loading screen first, but for now
 			ScreenManager.AddScreen(screens.level, screens.loadingScreen);
+			ScreenManager.AddScreen(screens.inputs);
 			ScreenManager.RemoveScreen(this);
 		}
 
