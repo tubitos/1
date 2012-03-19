@@ -40,7 +40,7 @@ namespace Aren.engine.entity.mob.people
 			}
 		}
 
-		public Person (IScreen screen, Vector3 position, Matrix rotation, float width, float height)
+		public Person (IScreen screen, Vector3 position, Matrix rotation, float width, float height, Vector3 scale)
 			: base (screen)
 		{
 			health = 0;
@@ -53,7 +53,7 @@ namespace Aren.engine.entity.mob.people
 			agility = 0;
 
 			backpack = new Backpack ();
-			charecter = new FullCharacterObject (position, rotation, height, width, new Vector3 (.05F), 0, 120);
+			charecter = new FullCharacterObject (position, rotation, height, width, scale, 0, 120);
 		}
 
 		protected override void Update (GameTime gameTime)
