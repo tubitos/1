@@ -11,7 +11,7 @@
       <Time>2012-01-10T20:09:29.2582993-08:00</Time>
       <Dependency>
         <Key>obj\x86\Debug\Models\landscape\chunk\#test\chunk_0.xml</Key>
-        <Value>2012-03-05T22:10:54.9631873-08:00</Value>
+        <Value>2012-03-14T23:17:07.1184709-07:00</Value>
       </Dependency>
     </Item>
     <Item>
@@ -24,7 +24,7 @@
       <Time>2012-01-10T20:09:27.0171711-08:00</Time>
       <Dependency>
         <Key>obj\x86\Debug\Models\objects\people\baseMan_0.xml</Key>
-        <Value>2012-03-05T22:10:55.4702163-08:00</Value>
+        <Value>2012-03-14T23:17:07.4154879-07:00</Value>
       </Dependency>
     </Item>
     <Item>
@@ -37,7 +37,7 @@
       <Time>2012-01-10T20:09:26.6041475-08:00</Time>
       <Dependency>
         <Key>obj\x86\Debug\Models\objects\assets\primitives\cube_0.xml</Key>
-        <Value>2012-03-05T22:10:55.6282253-08:00</Value>
+        <Value>2012-03-14T23:17:07.5434953-07:00</Value>
       </Dependency>
     </Item>
     <Item>
@@ -86,6 +86,681 @@
       <Time>2012-03-08T16:31:00.120061-08:00</Time>
     </Item>
     <Item>
+      <Source>Skins\Default\Images\Button.png</Source>
+      <Name>Skins\Default\Images\Button</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>V:\Users\Administrator\Documents\Visual Studio 2010\Projects\Aren\Aren\Aren\bin\x86\Debug\Content\Skins\Default\Images\Button.xnb</Output>
+      <Time>2011-11-24T22:37:06-08:00</Time>
+    </Item>
+    <Item>
+      <Source>Skins\Default\Images\CheckBox.Checked.png</Source>
+      <Name>Skins\Default\Images\CheckBox.Checked</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>V:\Users\Administrator\Documents\Visual Studio 2010\Projects\Aren\Aren\Aren\bin\x86\Debug\Content\Skins\Default\Images\CheckBox.Checked.xnb</Output>
+      <Time>2011-11-24T22:37:06-08:00</Time>
+    </Item>
+    <Item>
+      <Source>Skins\Default\Images\CheckBox.png</Source>
+      <Name>Skins\Default\Images\CheckBox</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>V:\Users\Administrator\Documents\Visual Studio 2010\Projects\Aren\Aren\Aren\bin\x86\Debug\Content\Skins\Default\Images\CheckBox.xnb</Output>
+      <Time>2011-11-24T22:37:06-08:00</Time>
+    </Item>
+    <Item>
+      <Source>Skins\Default\Images\ComboBox.Button.png</Source>
+      <Name>Skins\Default\Images\ComboBox.Button</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>V:\Users\Administrator\Documents\Visual Studio 2010\Projects\Aren\Aren\Aren\bin\x86\Debug\Content\Skins\Default\Images\ComboBox.Button.xnb</Output>
+      <Time>2011-11-24T22:37:06-08:00</Time>
+    </Item>
+    <Item>
+      <Source>Skins\Default\Images\ComboBox.ListBox.png</Source>
+      <Name>Skins\Default\Images\ComboBox.ListBox</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>V:\Users\Administrator\Documents\Visual Studio 2010\Projects\Aren\Aren\Aren\bin\x86\Debug\Content\Skins\Default\Images\ComboBox.ListBox.xnb</Output>
+      <Time>2011-11-24T22:37:06-08:00</Time>
+    </Item>
+    <Item>
+      <Source>Skins\Default\Images\ComboBox.png</Source>
+      <Name>Skins\Default\Images\ComboBox</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>V:\Users\Administrator\Documents\Visual Studio 2010\Projects\Aren\Aren\Aren\bin\x86\Debug\Content\Skins\Default\Images\ComboBox.xnb</Output>
+      <Time>2011-11-24T22:37:06-08:00</Time>
+    </Item>
+    <Item>
+      <Source>Skins\Default\Images\ContextMenu.png</Source>
+      <Name>Skins\Default\Images\ContextMenu</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>V:\Users\Administrator\Documents\Visual Studio 2010\Projects\Aren\Aren\Aren\bin\x86\Debug\Content\Skins\Default\Images\ContextMenu.xnb</Output>
+      <Time>2011-11-24T22:37:06-08:00</Time>
+    </Item>
+    <Item>
+      <Source>Skins\Default\Images\ContextMenu.Selection.png</Source>
+      <Name>Skins\Default\Images\ContextMenu.Selection</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>V:\Users\Administrator\Documents\Visual Studio 2010\Projects\Aren\Aren\Aren\bin\x86\Debug\Content\Skins\Default\Images\ContextMenu.Selection.xnb</Output>
+      <Time>2011-11-24T22:37:06-08:00</Time>
+    </Item>
+    <Item>
+      <Source>Skins\Default\Images\Control.Outline.png</Source>
+      <Name>Skins\Default\Images\Control.Outline</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>V:\Users\Administrator\Documents\Visual Studio 2010\Projects\Aren\Aren\Aren\bin\x86\Debug\Content\Skins\Default\Images\Control.Outline.xnb</Output>
+      <Time>2011-11-24T22:37:06-08:00</Time>
+    </Item>
+    <Item>
+      <Source>Skins\Default\Images\Control.png</Source>
+      <Name>Skins\Default\Images\Control</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>V:\Users\Administrator\Documents\Visual Studio 2010\Projects\Aren\Aren\Aren\bin\x86\Debug\Content\Skins\Default\Images\Control.xnb</Output>
+      <Time>2011-11-24T22:37:06-08:00</Time>
+    </Item>
+    <Item>
+      <Source>Skins\Default\Images\GroupBox.Flat.png</Source>
+      <Name>Skins\Default\Images\GroupBox.Flat</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>V:\Users\Administrator\Documents\Visual Studio 2010\Projects\Aren\Aren\Aren\bin\x86\Debug\Content\Skins\Default\Images\GroupBox.Flat.xnb</Output>
+      <Time>2011-11-24T22:37:06-08:00</Time>
+    </Item>
+    <Item>
+      <Source>Skins\Default\Images\GroupBox.png</Source>
+      <Name>Skins\Default\Images\GroupBox</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>V:\Users\Administrator\Documents\Visual Studio 2010\Projects\Aren\Aren\Aren\bin\x86\Debug\Content\Skins\Default\Images\GroupBox.xnb</Output>
+      <Time>2011-11-24T22:37:06-08:00</Time>
+    </Item>
+    <Item>
+      <Source>Skins\Default\Images\GroupPanel.png</Source>
+      <Name>Skins\Default\Images\GroupPanel</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>V:\Users\Administrator\Documents\Visual Studio 2010\Projects\Aren\Aren\Aren\bin\x86\Debug\Content\Skins\Default\Images\GroupPanel.xnb</Output>
+      <Time>2011-11-24T22:37:06-08:00</Time>
+    </Item>
+    <Item>
+      <Source>Skins\Default\Images\Icon.Error.png</Source>
+      <Name>Skins\Default\Images\Icon.Error</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>V:\Users\Administrator\Documents\Visual Studio 2010\Projects\Aren\Aren\Aren\bin\x86\Debug\Content\Skins\Default\Images\Icon.Error.xnb</Output>
+      <Time>2011-11-24T22:37:06-08:00</Time>
+    </Item>
+    <Item>
+      <Source>Skins\Default\Images\Icon.Information.png</Source>
+      <Name>Skins\Default\Images\Icon.Information</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>V:\Users\Administrator\Documents\Visual Studio 2010\Projects\Aren\Aren\Aren\bin\x86\Debug\Content\Skins\Default\Images\Icon.Information.xnb</Output>
+      <Time>2011-11-24T22:37:06-08:00</Time>
+    </Item>
+    <Item>
+      <Source>Skins\Default\Images\Icon.Question.png</Source>
+      <Name>Skins\Default\Images\Icon.Question</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>V:\Users\Administrator\Documents\Visual Studio 2010\Projects\Aren\Aren\Aren\bin\x86\Debug\Content\Skins\Default\Images\Icon.Question.xnb</Output>
+      <Time>2011-11-24T22:37:06-08:00</Time>
+    </Item>
+    <Item>
+      <Source>Skins\Default\Images\Icon.Warning.png</Source>
+      <Name>Skins\Default\Images\Icon.Warning</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>V:\Users\Administrator\Documents\Visual Studio 2010\Projects\Aren\Aren\Aren\bin\x86\Debug\Content\Skins\Default\Images\Icon.Warning.xnb</Output>
+      <Time>2011-11-24T22:37:06-08:00</Time>
+    </Item>
+    <Item>
+      <Source>Skins\Default\Images\ListBox.png</Source>
+      <Name>Skins\Default\Images\ListBox</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>V:\Users\Administrator\Documents\Visual Studio 2010\Projects\Aren\Aren\Aren\bin\x86\Debug\Content\Skins\Default\Images\ListBox.xnb</Output>
+      <Time>2011-11-24T22:37:06-08:00</Time>
+    </Item>
+    <Item>
+      <Source>Skins\Default\Images\ListBox.Selection.png</Source>
+      <Name>Skins\Default\Images\ListBox.Selection</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>V:\Users\Administrator\Documents\Visual Studio 2010\Projects\Aren\Aren\Aren\bin\x86\Debug\Content\Skins\Default\Images\ListBox.Selection.xnb</Output>
+      <Time>2011-11-24T22:37:06-08:00</Time>
+    </Item>
+    <Item>
+      <Source>Skins\Default\Images\MainMenu.png</Source>
+      <Name>Skins\Default\Images\MainMenu</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>V:\Users\Administrator\Documents\Visual Studio 2010\Projects\Aren\Aren\Aren\bin\x86\Debug\Content\Skins\Default\Images\MainMenu.xnb</Output>
+      <Time>2011-11-24T22:37:06-08:00</Time>
+    </Item>
+    <Item>
+      <Source>Skins\Default\Images\MainMenu.Selection.png</Source>
+      <Name>Skins\Default\Images\MainMenu.Selection</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>V:\Users\Administrator\Documents\Visual Studio 2010\Projects\Aren\Aren\Aren\bin\x86\Debug\Content\Skins\Default\Images\MainMenu.Selection.xnb</Output>
+      <Time>2011-11-24T22:37:06-08:00</Time>
+    </Item>
+    <Item>
+      <Source>Skins\Default\Images\ProgressBar.png</Source>
+      <Name>Skins\Default\Images\ProgressBar</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>V:\Users\Administrator\Documents\Visual Studio 2010\Projects\Aren\Aren\Aren\bin\x86\Debug\Content\Skins\Default\Images\ProgressBar.xnb</Output>
+      <Time>2011-11-24T22:37:06-08:00</Time>
+    </Item>
+    <Item>
+      <Source>Skins\Default\Images\ProgressBar.Scale.png</Source>
+      <Name>Skins\Default\Images\ProgressBar.Scale</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>V:\Users\Administrator\Documents\Visual Studio 2010\Projects\Aren\Aren\Aren\bin\x86\Debug\Content\Skins\Default\Images\ProgressBar.Scale.xnb</Output>
+      <Time>2011-11-24T22:37:06-08:00</Time>
+    </Item>
+    <Item>
+      <Source>Skins\Default\Images\RadioButton.Checked.png</Source>
+      <Name>Skins\Default\Images\RadioButton.Checked</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>V:\Users\Administrator\Documents\Visual Studio 2010\Projects\Aren\Aren\Aren\bin\x86\Debug\Content\Skins\Default\Images\RadioButton.Checked.xnb</Output>
+      <Time>2011-11-24T22:37:06-08:00</Time>
+    </Item>
+    <Item>
+      <Source>Skins\Default\Images\RadioButton.png</Source>
+      <Name>Skins\Default\Images\RadioButton</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>V:\Users\Administrator\Documents\Visual Studio 2010\Projects\Aren\Aren\Aren\bin\x86\Debug\Content\Skins\Default\Images\RadioButton.xnb</Output>
+      <Time>2011-11-24T22:37:06-08:00</Time>
+    </Item>
+    <Item>
+      <Source>Skins\Default\Images\ScrollBar.ButtonHorz.png</Source>
+      <Name>Skins\Default\Images\ScrollBar.ButtonHorz</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>V:\Users\Administrator\Documents\Visual Studio 2010\Projects\Aren\Aren\Aren\bin\x86\Debug\Content\Skins\Default\Images\ScrollBar.ButtonHorz.xnb</Output>
+      <Time>2011-11-24T22:37:06-08:00</Time>
+    </Item>
+    <Item>
+      <Source>Skins\Default\Images\ScrollBar.ButtonVert.png</Source>
+      <Name>Skins\Default\Images\ScrollBar.ButtonVert</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>V:\Users\Administrator\Documents\Visual Studio 2010\Projects\Aren\Aren\Aren\bin\x86\Debug\Content\Skins\Default\Images\ScrollBar.ButtonVert.xnb</Output>
+      <Time>2011-11-24T22:37:06-08:00</Time>
+    </Item>
+    <Item>
+      <Source>Skins\Default\Images\ScrollBar.GlyphHorz.png</Source>
+      <Name>Skins\Default\Images\ScrollBar.GlyphHorz</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>V:\Users\Administrator\Documents\Visual Studio 2010\Projects\Aren\Aren\Aren\bin\x86\Debug\Content\Skins\Default\Images\ScrollBar.GlyphHorz.xnb</Output>
+      <Time>2011-11-24T22:37:06-08:00</Time>
+    </Item>
+    <Item>
+      <Source>Skins\Default\Images\ScrollBar.GlyphVert.png</Source>
+      <Name>Skins\Default\Images\ScrollBar.GlyphVert</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>V:\Users\Administrator\Documents\Visual Studio 2010\Projects\Aren\Aren\Aren\bin\x86\Debug\Content\Skins\Default\Images\ScrollBar.GlyphVert.xnb</Output>
+      <Time>2011-11-24T22:37:06-08:00</Time>
+    </Item>
+    <Item>
+      <Source>Skins\Default\Images\ScrollBar.RailHorz.png</Source>
+      <Name>Skins\Default\Images\ScrollBar.RailHorz</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>V:\Users\Administrator\Documents\Visual Studio 2010\Projects\Aren\Aren\Aren\bin\x86\Debug\Content\Skins\Default\Images\ScrollBar.RailHorz.xnb</Output>
+      <Time>2011-11-24T22:37:08-08:00</Time>
+    </Item>
+    <Item>
+      <Source>Skins\Default\Images\ScrollBar.RailVert.png</Source>
+      <Name>Skins\Default\Images\ScrollBar.RailVert</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>V:\Users\Administrator\Documents\Visual Studio 2010\Projects\Aren\Aren\Aren\bin\x86\Debug\Content\Skins\Default\Images\ScrollBar.RailVert.xnb</Output>
+      <Time>2011-11-24T22:37:08-08:00</Time>
+    </Item>
+    <Item>
+      <Source>Skins\Default\Images\Shared.ArrowDown.png</Source>
+      <Name>Skins\Default\Images\Shared.ArrowDown</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>V:\Users\Administrator\Documents\Visual Studio 2010\Projects\Aren\Aren\Aren\bin\x86\Debug\Content\Skins\Default\Images\Shared.ArrowDown.xnb</Output>
+      <Time>2011-11-24T22:37:08-08:00</Time>
+    </Item>
+    <Item>
+      <Source>Skins\Default\Images\Shared.ArrowLeft.png</Source>
+      <Name>Skins\Default\Images\Shared.ArrowLeft</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>V:\Users\Administrator\Documents\Visual Studio 2010\Projects\Aren\Aren\Aren\bin\x86\Debug\Content\Skins\Default\Images\Shared.ArrowLeft.xnb</Output>
+      <Time>2011-11-24T22:37:08-08:00</Time>
+    </Item>
+    <Item>
+      <Source>Skins\Default\Images\Shared.ArrowRight.png</Source>
+      <Name>Skins\Default\Images\Shared.ArrowRight</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>V:\Users\Administrator\Documents\Visual Studio 2010\Projects\Aren\Aren\Aren\bin\x86\Debug\Content\Skins\Default\Images\Shared.ArrowRight.xnb</Output>
+      <Time>2011-11-24T22:37:08-08:00</Time>
+    </Item>
+    <Item>
+      <Source>Skins\Default\Images\Shared.ArrowUp.png</Source>
+      <Name>Skins\Default\Images\Shared.ArrowUp</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>V:\Users\Administrator\Documents\Visual Studio 2010\Projects\Aren\Aren\Aren\bin\x86\Debug\Content\Skins\Default\Images\Shared.ArrowUp.xnb</Output>
+      <Time>2011-11-24T22:37:08-08:00</Time>
+    </Item>
+    <Item>
+      <Source>Skins\Default\Images\Shared.End.png</Source>
+      <Name>Skins\Default\Images\Shared.End</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>V:\Users\Administrator\Documents\Visual Studio 2010\Projects\Aren\Aren\Aren\bin\x86\Debug\Content\Skins\Default\Images\Shared.End.xnb</Output>
+      <Time>2011-11-24T22:37:08-08:00</Time>
+    </Item>
+    <Item>
+      <Source>Skins\Default\Images\Shared.Glyph.png</Source>
+      <Name>Skins\Default\Images\Shared.Glyph</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>V:\Users\Administrator\Documents\Visual Studio 2010\Projects\Aren\Aren\Aren\bin\x86\Debug\Content\Skins\Default\Images\Shared.Glyph.xnb</Output>
+      <Time>2011-11-24T22:37:08-08:00</Time>
+    </Item>
+    <Item>
+      <Source>Skins\Default\Images\Shared.Home.png</Source>
+      <Name>Skins\Default\Images\Shared.Home</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>V:\Users\Administrator\Documents\Visual Studio 2010\Projects\Aren\Aren\Aren\bin\x86\Debug\Content\Skins\Default\Images\Shared.Home.xnb</Output>
+      <Time>2011-11-24T22:37:08-08:00</Time>
+    </Item>
+    <Item>
+      <Source>Skins\Default\Images\Shared.PageDown.png</Source>
+      <Name>Skins\Default\Images\Shared.PageDown</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>V:\Users\Administrator\Documents\Visual Studio 2010\Projects\Aren\Aren\Aren\bin\x86\Debug\Content\Skins\Default\Images\Shared.PageDown.xnb</Output>
+      <Time>2011-11-24T22:37:08-08:00</Time>
+    </Item>
+    <Item>
+      <Source>Skins\Default\Images\Shared.PageUp.png</Source>
+      <Name>Skins\Default\Images\Shared.PageUp</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>V:\Users\Administrator\Documents\Visual Studio 2010\Projects\Aren\Aren\Aren\bin\x86\Debug\Content\Skins\Default\Images\Shared.PageUp.xnb</Output>
+      <Time>2011-11-24T22:37:08-08:00</Time>
+    </Item>
+    <Item>
+      <Source>Skins\Default\Images\Sidebar.png</Source>
+      <Name>Skins\Default\Images\Sidebar</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>V:\Users\Administrator\Documents\Visual Studio 2010\Projects\Aren\Aren\Aren\bin\x86\Debug\Content\Skins\Default\Images\Sidebar.xnb</Output>
+      <Time>2011-11-24T22:37:08-08:00</Time>
+    </Item>
+    <Item>
+      <Source>Skins\Default\Images\SidebarPanel.png</Source>
+      <Name>Skins\Default\Images\SidebarPanel</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>V:\Users\Administrator\Documents\Visual Studio 2010\Projects\Aren\Aren\Aren\bin\x86\Debug\Content\Skins\Default\Images\SidebarPanel.xnb</Output>
+      <Time>2011-11-24T22:37:08-08:00</Time>
+    </Item>
+    <Item>
+      <Source>Skins\Default\Images\SpinBox.Button.png</Source>
+      <Name>Skins\Default\Images\SpinBox.Button</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>V:\Users\Administrator\Documents\Visual Studio 2010\Projects\Aren\Aren\Aren\bin\x86\Debug\Content\Skins\Default\Images\SpinBox.Button.xnb</Output>
+      <Time>2011-11-24T22:37:08-08:00</Time>
+    </Item>
+    <Item>
+      <Source>Skins\Default\Images\SpinBox.png</Source>
+      <Name>Skins\Default\Images\SpinBox</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>V:\Users\Administrator\Documents\Visual Studio 2010\Projects\Aren\Aren\Aren\bin\x86\Debug\Content\Skins\Default\Images\SpinBox.xnb</Output>
+      <Time>2011-11-24T22:37:08-08:00</Time>
+    </Item>
+    <Item>
+      <Source>Skins\Default\Images\StatusBar.png</Source>
+      <Name>Skins\Default\Images\StatusBar</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>V:\Users\Administrator\Documents\Visual Studio 2010\Projects\Aren\Aren\Aren\bin\x86\Debug\Content\Skins\Default\Images\StatusBar.xnb</Output>
+      <Time>2011-11-24T22:37:08-08:00</Time>
+    </Item>
+    <Item>
+      <Source>Skins\Default\Images\TabControl.Header.png</Source>
+      <Name>Skins\Default\Images\TabControl.Header</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>V:\Users\Administrator\Documents\Visual Studio 2010\Projects\Aren\Aren\Aren\bin\x86\Debug\Content\Skins\Default\Images\TabControl.Header.xnb</Output>
+      <Time>2011-11-24T22:37:08-08:00</Time>
+    </Item>
+    <Item>
+      <Source>Skins\Default\Images\TabControl.png</Source>
+      <Name>Skins\Default\Images\TabControl</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>V:\Users\Administrator\Documents\Visual Studio 2010\Projects\Aren\Aren\Aren\bin\x86\Debug\Content\Skins\Default\Images\TabControl.xnb</Output>
+      <Time>2011-11-24T22:37:08-08:00</Time>
+    </Item>
+    <Item>
+      <Source>Skins\Default\Images\TextBox.Cursor.png</Source>
+      <Name>Skins\Default\Images\TextBox.Cursor</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>V:\Users\Administrator\Documents\Visual Studio 2010\Projects\Aren\Aren\Aren\bin\x86\Debug\Content\Skins\Default\Images\TextBox.Cursor.xnb</Output>
+      <Time>2011-11-24T22:37:08-08:00</Time>
+    </Item>
+    <Item>
+      <Source>Skins\Default\Images\TextBox.png</Source>
+      <Name>Skins\Default\Images\TextBox</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>V:\Users\Administrator\Documents\Visual Studio 2010\Projects\Aren\Aren\Aren\bin\x86\Debug\Content\Skins\Default\Images\TextBox.xnb</Output>
+      <Time>2011-11-24T22:37:08-08:00</Time>
+    </Item>
+    <Item>
+      <Source>Skins\Default\Images\ToolBar.png</Source>
+      <Name>Skins\Default\Images\ToolBar</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>V:\Users\Administrator\Documents\Visual Studio 2010\Projects\Aren\Aren\Aren\bin\x86\Debug\Content\Skins\Default\Images\ToolBar.xnb</Output>
+      <Time>2011-11-24T22:37:08-08:00</Time>
+    </Item>
+    <Item>
+      <Source>Skins\Default\Images\ToolBarButton.png</Source>
+      <Name>Skins\Default\Images\ToolBarButton</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>V:\Users\Administrator\Documents\Visual Studio 2010\Projects\Aren\Aren\Aren\bin\x86\Debug\Content\Skins\Default\Images\ToolBarButton.xnb</Output>
+      <Time>2011-11-24T22:37:08-08:00</Time>
+    </Item>
+    <Item>
+      <Source>Skins\Default\Images\ToolBarPanel.png</Source>
+      <Name>Skins\Default\Images\ToolBarPanel</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>V:\Users\Administrator\Documents\Visual Studio 2010\Projects\Aren\Aren\Aren\bin\x86\Debug\Content\Skins\Default\Images\ToolBarPanel.xnb</Output>
+      <Time>2011-11-24T22:37:08-08:00</Time>
+    </Item>
+    <Item>
+      <Source>Skins\Default\Images\ToolTip.png</Source>
+      <Name>Skins\Default\Images\ToolTip</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>V:\Users\Administrator\Documents\Visual Studio 2010\Projects\Aren\Aren\Aren\bin\x86\Debug\Content\Skins\Default\Images\ToolTip.xnb</Output>
+      <Time>2011-11-24T22:37:08-08:00</Time>
+    </Item>
+    <Item>
+      <Source>Skins\Default\Images\TrackBar.Button.png</Source>
+      <Name>Skins\Default\Images\TrackBar.Button</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>V:\Users\Administrator\Documents\Visual Studio 2010\Projects\Aren\Aren\Aren\bin\x86\Debug\Content\Skins\Default\Images\TrackBar.Button.xnb</Output>
+      <Time>2011-11-24T22:37:08-08:00</Time>
+    </Item>
+    <Item>
+      <Source>Skins\Default\Images\TrackBar.png</Source>
+      <Name>Skins\Default\Images\TrackBar</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>V:\Users\Administrator\Documents\Visual Studio 2010\Projects\Aren\Aren\Aren\bin\x86\Debug\Content\Skins\Default\Images\TrackBar.xnb</Output>
+      <Time>2011-11-24T22:37:08-08:00</Time>
+    </Item>
+    <Item>
+      <Source>Skins\Default\Images\Window.Caption.png</Source>
+      <Name>Skins\Default\Images\Window.Caption</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>V:\Users\Administrator\Documents\Visual Studio 2010\Projects\Aren\Aren\Aren\bin\x86\Debug\Content\Skins\Default\Images\Window.Caption.xnb</Output>
+      <Time>2011-11-24T22:37:08-08:00</Time>
+    </Item>
+    <Item>
+      <Source>Skins\Default\Images\Window.CloseButton.png</Source>
+      <Name>Skins\Default\Images\Window.CloseButton</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>V:\Users\Administrator\Documents\Visual Studio 2010\Projects\Aren\Aren\Aren\bin\x86\Debug\Content\Skins\Default\Images\Window.CloseButton.xnb</Output>
+      <Time>2011-11-24T22:37:08-08:00</Time>
+    </Item>
+    <Item>
+      <Source>Skins\Default\Images\Window.FrameBottom.png</Source>
+      <Name>Skins\Default\Images\Window.FrameBottom</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>V:\Users\Administrator\Documents\Visual Studio 2010\Projects\Aren\Aren\Aren\bin\x86\Debug\Content\Skins\Default\Images\Window.FrameBottom.xnb</Output>
+      <Time>2011-11-24T22:37:08-08:00</Time>
+    </Item>
+    <Item>
+      <Source>Skins\Default\Images\Window.FrameLeft.png</Source>
+      <Name>Skins\Default\Images\Window.FrameLeft</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>V:\Users\Administrator\Documents\Visual Studio 2010\Projects\Aren\Aren\Aren\bin\x86\Debug\Content\Skins\Default\Images\Window.FrameLeft.xnb</Output>
+      <Time>2011-11-24T22:37:08-08:00</Time>
+    </Item>
+    <Item>
+      <Source>Skins\Default\Images\Window.FrameRight.png</Source>
+      <Name>Skins\Default\Images\Window.FrameRight</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>V:\Users\Administrator\Documents\Visual Studio 2010\Projects\Aren\Aren\Aren\bin\x86\Debug\Content\Skins\Default\Images\Window.FrameRight.xnb</Output>
+      <Time>2011-11-24T22:37:08-08:00</Time>
+    </Item>
+    <Item>
+      <Source>Skins\Default\Images\Window.FrameTop.png</Source>
+      <Name>Skins\Default\Images\Window.FrameTop</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>V:\Users\Administrator\Documents\Visual Studio 2010\Projects\Aren\Aren\Aren\bin\x86\Debug\Content\Skins\Default\Images\Window.FrameTop.xnb</Output>
+      <Time>2011-11-24T22:37:08-08:00</Time>
+    </Item>
+    <Item>
+      <Source>Skins\Default\Images\Window.Icon.png</Source>
+      <Name>Skins\Default\Images\Window.Icon</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>V:\Users\Administrator\Documents\Visual Studio 2010\Projects\Aren\Aren\Aren\bin\x86\Debug\Content\Skins\Default\Images\Window.Icon.xnb</Output>
+      <Time>2011-11-24T22:37:08-08:00</Time>
+    </Item>
+    <Item>
+      <Source>Skins\Default\Images\Window.png</Source>
+      <Name>Skins\Default\Images\Window</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>V:\Users\Administrator\Documents\Visual Studio 2010\Projects\Aren\Aren\Aren\bin\x86\Debug\Content\Skins\Default\Images\Window.xnb</Output>
+      <Time>2011-11-24T22:37:08-08:00</Time>
+    </Item>
+    <Item>
+      <Source>Skins\Default\Images\Window.Shadow.png</Source>
+      <Name>Skins\Default\Images\Window.Shadow</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>V:\Users\Administrator\Documents\Visual Studio 2010\Projects\Aren\Aren\Aren\bin\x86\Debug\Content\Skins\Default\Images\Window.Shadow.xnb</Output>
+      <Time>2011-11-24T22:37:08-08:00</Time>
+    </Item>
+    <Item>
+      <Source>Images\font\ArenScriptFont.spritefont</Source>
+      <Name>Images\font\ArenScriptFont</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+      <Options>None</Options>
+      <Output>V:\Users\Administrator\Documents\Visual Studio 2010\Projects\Aren\Aren\Aren\bin\x86\Debug\Content\Images\font\ArenScriptFont.xnb</Output>
+      <Time>2012-03-12T01:07:23.3132988-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Images\font\ArenMagiFont.spritefont</Source>
+      <Name>Images\font\ArenMagiFont</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+      <Options>None</Options>
+      <Output>V:\Users\Administrator\Documents\Visual Studio 2010\Projects\Aren\Aren\Aren\bin\x86\Debug\Content\Images\font\ArenMagiFont.xnb</Output>
+      <Time>2012-03-12T01:07:22.5432547-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Skins\Default\Fonts\Default.spritefont</Source>
+      <Name>Skins\Default\Fonts\Default</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+      <Options>None</Options>
+      <Output>V:\Users\Administrator\Documents\Visual Studio 2010\Projects\Aren\Aren\Aren\bin\x86\Debug\Content\Skins\Default\Fonts\Default.xnb</Output>
+      <Time>2011-11-24T22:37:06-08:00</Time>
+    </Item>
+    <Item>
+      <Source>Skins\Default\Cursors\Busy.cur</Source>
+      <Name>Skins\Default\Cursors\Busy</Name>
+      <Importer>CursorImporter</Importer>
+      <Options>None</Options>
+      <Output>V:\Users\Administrator\Documents\Visual Studio 2010\Projects\Aren\Aren\Aren\bin\x86\Debug\Content\Skins\Default\Cursors\Busy.xnb</Output>
+      <Time>2011-11-24T22:37:06-08:00</Time>
+    </Item>
+    <Item>
+      <Source>Skins\Default\Cursors\Cross.cur</Source>
+      <Name>Skins\Default\Cursors\Cross</Name>
+      <Importer>CursorImporter</Importer>
+      <Options>None</Options>
+      <Output>V:\Users\Administrator\Documents\Visual Studio 2010\Projects\Aren\Aren\Aren\bin\x86\Debug\Content\Skins\Default\Cursors\Cross.xnb</Output>
+      <Time>2011-11-24T22:37:06-08:00</Time>
+    </Item>
+    <Item>
+      <Source>Skins\Default\Cursors\Default.cur</Source>
+      <Name>Skins\Default\Cursors\Default</Name>
+      <Importer>CursorImporter</Importer>
+      <Options>None</Options>
+      <Output>V:\Users\Administrator\Documents\Visual Studio 2010\Projects\Aren\Aren\Aren\bin\x86\Debug\Content\Skins\Default\Cursors\Default.xnb</Output>
+      <Time>2011-11-24T22:37:06-08:00</Time>
+    </Item>
+    <Item>
+      <Source>Skins\Default\Cursors\DiagonalLeft.cur</Source>
+      <Name>Skins\Default\Cursors\DiagonalLeft</Name>
+      <Importer>CursorImporter</Importer>
+      <Options>None</Options>
+      <Output>V:\Users\Administrator\Documents\Visual Studio 2010\Projects\Aren\Aren\Aren\bin\x86\Debug\Content\Skins\Default\Cursors\DiagonalLeft.xnb</Output>
+      <Time>2011-11-24T22:37:06-08:00</Time>
+    </Item>
+    <Item>
+      <Source>Skins\Default\Cursors\DiagonalRight.cur</Source>
+      <Name>Skins\Default\Cursors\DiagonalRight</Name>
+      <Importer>CursorImporter</Importer>
+      <Options>None</Options>
+      <Output>V:\Users\Administrator\Documents\Visual Studio 2010\Projects\Aren\Aren\Aren\bin\x86\Debug\Content\Skins\Default\Cursors\DiagonalRight.xnb</Output>
+      <Time>2011-11-24T22:37:06-08:00</Time>
+    </Item>
+    <Item>
+      <Source>Skins\Default\Cursors\Horizontal.cur</Source>
+      <Name>Skins\Default\Cursors\Horizontal</Name>
+      <Importer>CursorImporter</Importer>
+      <Options>None</Options>
+      <Output>V:\Users\Administrator\Documents\Visual Studio 2010\Projects\Aren\Aren\Aren\bin\x86\Debug\Content\Skins\Default\Cursors\Horizontal.xnb</Output>
+      <Time>2011-11-24T22:37:06-08:00</Time>
+    </Item>
+    <Item>
+      <Source>Skins\Default\Cursors\Move.cur</Source>
+      <Name>Skins\Default\Cursors\Move</Name>
+      <Importer>CursorImporter</Importer>
+      <Options>None</Options>
+      <Output>V:\Users\Administrator\Documents\Visual Studio 2010\Projects\Aren\Aren\Aren\bin\x86\Debug\Content\Skins\Default\Cursors\Move.xnb</Output>
+      <Time>2011-11-24T22:37:06-08:00</Time>
+    </Item>
+    <Item>
+      <Source>Skins\Default\Cursors\Text.cur</Source>
+      <Name>Skins\Default\Cursors\Text</Name>
+      <Importer>CursorImporter</Importer>
+      <Options>None</Options>
+      <Output>V:\Users\Administrator\Documents\Visual Studio 2010\Projects\Aren\Aren\Aren\bin\x86\Debug\Content\Skins\Default\Cursors\Text.xnb</Output>
+      <Time>2011-11-24T22:37:06-08:00</Time>
+    </Item>
+    <Item>
+      <Source>Skins\Default\Cursors\Vertical.cur</Source>
+      <Name>Skins\Default\Cursors\Vertical</Name>
+      <Importer>CursorImporter</Importer>
+      <Options>None</Options>
+      <Output>V:\Users\Administrator\Documents\Visual Studio 2010\Projects\Aren\Aren\Aren\bin\x86\Debug\Content\Skins\Default\Cursors\Vertical.xnb</Output>
+      <Time>2011-11-24T22:37:06-08:00</Time>
+    </Item>
+    <Item>
       <Source>Models\landscape\chunk\#test\chunk.x</Source>
       <Importer>XImporter</Importer>
       <Options>IntermediateFile, DontCacheImportedData</Options>
@@ -106,24 +781,6 @@
       <Output>obj\x86\Debug\Models\objects\assets\primitives\cube_0.xml</Output>
       <Time>2012-01-10T20:09:26.6041475-08:00</Time>
     </Item>
-    <Item>
-      <Source>Images\font\ArenScriptFont.spritefont</Source>
-      <Name>Images\font\ArenScriptFont</Name>
-      <Importer>FontDescriptionImporter</Importer>
-      <Processor>FontDescriptionProcessor</Processor>
-      <Options>None</Options>
-      <Output>V:\Users\Administrator\Documents\Visual Studio 2010\Projects\Aren\Aren\Aren\bin\x86\Debug\Content\Images\font\ArenScriptFont.xnb</Output>
-      <Time>2012-03-12T01:07:23.3132988-07:00</Time>
-    </Item>
-    <Item>
-      <Source>Images\font\ArenMagiFont.spritefont</Source>
-      <Name>Images\font\ArenMagiFont</Name>
-      <Importer>FontDescriptionImporter</Importer>
-      <Processor>FontDescriptionProcessor</Processor>
-      <Options>None</Options>
-      <Output>V:\Users\Administrator\Documents\Visual Studio 2010\Projects\Aren\Aren\Aren\bin\x86\Debug\Content\Images\font\ArenMagiFont.xnb</Output>
-      <Time>2012-03-12T01:07:22.5432547-07:00</Time>
-    </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
       <TargetPlatform>Windows</TargetPlatform>
@@ -136,6 +793,10 @@
       <OutputDirectory>V:\Users\Administrator\Documents\Visual Studio 2010\Projects\Aren\Aren\Aren\bin\x86\Debug\Content\</OutputDirectory>
     </Settings>
     <Assemblies>
+      <Assembly>
+        <Key>V:\Users\Administrator\Documents\Visual Studio 2010\Projects\Aren\Aren\Aren\engine\include\PloobsEnginePipelineDebug.dll</Key>
+        <Value>2012-03-05T22:05:44.643438-08:00</Value>
+      </Assembly>
       <Assembly>
         <Key>V:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.XImporter.dll</Key>
         <Value>2010-08-23T13:41:18-07:00</Value>

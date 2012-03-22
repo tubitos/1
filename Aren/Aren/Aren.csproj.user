@@ -12,15 +12,15 @@
     <ProjectView>ProjectFiles</ProjectView>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
-    <StartWorkingDirectory>V:\Users\Administrator\Documents\Visual Studio 2010\Projects\Aren\Aren\Aren\bin\x86\Debug\</StartWorkingDirectory>
-    <StartArguments>
-    </StartArguments>
+    <StartWorkingDirectory>
+    </StartWorkingDirectory>
+    <StartArguments>-windowed</StartArguments>
     <RemoteDebugEnabled>false</RemoteDebugEnabled>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
-    <StartWorkingDirectory>V:\Users\Administrator\Documents\Visual Studio 2010\Projects\Aren\Aren\Aren\bin\x86\Debug\</StartWorkingDirectory>
-    <StartArguments>
-    </StartArguments>
+    <StartWorkingDirectory>
+    </StartWorkingDirectory>
+    <StartArguments>-windowed</StartArguments>
     <RemoteDebugEnabled>false</RemoteDebugEnabled>
   </PropertyGroup>
 </Project>

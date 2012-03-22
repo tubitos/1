@@ -12,6 +12,7 @@ using PloobsEngine.Engine;
 using PloobsEngine.SceneControl;
 using System.Threading;
 using Aren.menu;
+using Aren.engine.settings.properties;
 
 namespace Aren
 {
@@ -34,6 +35,8 @@ namespace Aren
 
 		public static void Play (Boolean windowed)
 		{
+			Saver.Setup();
+
 			//desc.UseAnisotropicFiltering = Boolean.Parse(args[0]);
 			//desc.isFixedGameTime = Boolean.Parse(args[1]);
 			//desc.useMipMapWhenPossible = Boolean.Parse(args[2]);

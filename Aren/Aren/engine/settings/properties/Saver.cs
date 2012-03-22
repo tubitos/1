@@ -8,23 +8,22 @@ using System.Collections;
 
 namespace Aren.engine.settings.properties
 {
-	class Saver
+	public static class Saver
 	{
-		String settingsPath;
-		KeysConverter kc;
+		static String settingsPath;
+		static KeysConverter kc;
 
-		Hashtable keys;
-		Hashtable graphics;
-		Hashtable sound;
-		Hashtable game;
+		static Hashtable keys;
+		static Hashtable graphics;
+		static Hashtable sound;
+		static Hashtable game;
 
-		public Saver ()
-			: this (Environment.GetFolderPath (Environment.SpecialFolder.MyDocuments, Environment.SpecialFolderOption.None) + @"\My Games\[GAME NAME]\config")
+		public static void Setup ()
 		{
-			
+			Setup(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments, Environment.SpecialFolderOption.None) + @"\My Games\Aren\config");
 		}
 
-		public Saver (String savePath)
+		public static void Setup (String savePath)
 		{
 			keys = new Hashtable ();
 			graphics = new Hashtable ();
@@ -43,45 +42,51 @@ namespace Aren.engine.settings.properties
 			CheckForSettingsFiles ();
 		}
 
-		void CheckForSettingsFiles ()
+		static void CheckForSettingsFiles ()
 		{
 			try
 			{
-				FileStream fs = new FileStream(settingsPath, FileMode.Open);
+				FileStream fs;
 
 				if (!File.Exists(settingsPath + @"\keys.cfg"))
 				{
 					fs = File.Create(settingsPath + @"\keys.cfg");
+					fs.Close();
 				}
-
+				
 				if (!File.Exists(settingsPath + @"\graphics.cfg"))
 				{
 					fs = File.Create(settingsPath + @"\graphics.cfg");
+					fs.Close();
 				}
 
 				if (!File.Exists(settingsPath + @"\sound.cfg"))
 				{
 					fs = File.Create(settingsPath + @"\sound.cfg");
+					fs.Close();
 				}
 
 				if (!File.Exists(settingsPath + @"\game.cfg"))
 				{
 					fs = File.Create(settingsPath + @"\game.cfg");
+					fs.Close();
 				}
-
-				fs.Close();
 			}
 			catch (Exception e)
 			{
 				if (e is UnauthorizedAccessException)
 				{
-					MessageBox.Show("Unauthorized Access Exception at 'Aren.engine.settings.properties.Saver'!" + 
+					MessageBox.Show("Unauthorized Access Exception at 'Aren.engine.settings.properties.Saver'!" +
 						"\nPlese contact support regarding this issue.", "Unhandled Excepton!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+				}
+				else
+				{
+					MessageBox.Show(e.StackTrace, e.Message, MessageBoxButtons.OK);
 				}
 			}
 		}
 
-		void PopulateKeys ()
+		static void PopulateKeys ()
 		{
 			keys.Add ("forward", kc.ConvertToString (Controls.forward));
 			keys.Add ("backward", kc.ConvertToString (Controls.backward));
@@ -91,22 +96,22 @@ namespace Aren.engine.settings.properties
 			keys.Add ("strafeRight", kc.ConvertToString (Controls.strafeRight));
 		}
 
-		void PopulateGraphics ()
+		static void PopulateGraphics ()
 		{
 
 		}
 
-		void PopulateSound ()
+		static void PopulateSound ()
 		{
 
 		}
 
-		void PopulateGame ()
+		static void PopulateGame ()
 		{
 
 		}
 
-		public void Save ()
+		public static void Save ()
 		{
 			CheckForSettingsFiles ();
 
