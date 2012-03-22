@@ -117,6 +117,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="engine\entity\mob\people\player\PlayerCamera.cs" />
     <Compile Include="Level.cs" />
     <Compile Include="engine\entity\items\Backpack.cs" />
     <Compile Include="engine\entity\items\BaseItem.cs" />
@@ -124,8 +125,6 @@
     <Compile Include="engine\events\KeyChangeEventArgs.cs" />
     <Compile Include="engine\events\MouseChangeEventArgs.cs" />
     <Compile Include="engine\events\PlayerMoveEventArgs.cs" />
-    <Compile Include="engine\helpers\Direction.cs" />
-    <Compile Include="engine\helpers\Size.cs" />
     <Compile Include="engine\land\chunk\Area.cs" />
     <Compile Include="engine\land\world\World.cs" />
     <Compile Include="engine\land\world\WorldManager.cs" />
@@ -148,12 +147,14 @@
     <Compile Include="menu\components\ButtonClickEventArgs.cs" />
     <Compile Include="menu\components\MouseDownEventArgs.cs" />
     <Compile Include="menu\components\MouseOverEventArgs.cs" />
+    <Compile Include="menu\LoadingScreen.cs" />
     <Compile Include="menu\MainMenu.cs" />
     <Compile Include="menu\Menu.cs" />
-    <Compile Include="PickingScreen.cs" />
+    <Compile Include="menu\Options.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Entry.cs" />
+    <Compile Include="screens.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="databases\Database1_log.LDF">
@@ -167,7 +168,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="DragonSmall.png" />
-    <Content Include="GameThumbnail.png" />
+    <Content Include="engine\include\PloobsEngineDebug.dll" />
+    <Content Include="engine\include\PloobsEngineDebug.xml" />
+    <Content Include="engine\include\PloobsEnginePipelineDebug.dll" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\ArenContent\ArenContent.contentproj">

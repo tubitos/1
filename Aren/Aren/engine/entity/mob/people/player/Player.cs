@@ -31,6 +31,7 @@ namespace Aren.engine.entity.mob.people.player
 		float rotSpeed;
 		float zoomDistance;
 		float height;
+		Boolean _firstPerson;
 		Vector3 scale = new Vector3(.05F);
 
 		public Player (IScreen screen, Vector3 position, Matrix rotation, SimpleModel model, float width, float height, Boolean useThirdPerson = false)
@@ -57,14 +58,7 @@ namespace Aren.engine.entity.mob.people.player
 
 			UpdateCamera();
 
-			if (useThirdPerson)
-			{
-
-			}
-			else
-			{
-
-			}
+			firstPerson = !useThirdPerson;
 
 			this.Start();
 		}
@@ -93,7 +87,6 @@ namespace Aren.engine.entity.mob.people.player
 				camera.FieldOfView = value;
 			}
 		}
-
 		public float rotationSpeed
 		{
 			get
@@ -110,6 +103,17 @@ namespace Aren.engine.entity.mob.people.player
 				{
 					throw new ArgumentException("Rotation Speed cannot be less then or equal to zero");
 				}
+			}
+		}
+		Boolean firstPerson
+		{
+			get
+			{
+				return _firstPerson;
+			}
+			set
+			{
+				_firstPerson = value;
 			}
 		}
 
@@ -144,6 +148,19 @@ namespace Aren.engine.entity.mob.people.player
 
 			if (isActive)
 			{
+				zoomDistance += (InputStates.omstate.ScrollWheelValue - InputStates.mstate.ScrollWheelValue) / 10;
+
+				if (zoomDistance <= 0)
+				{
+					zoomDistance = 0;
+
+					firstPerson = true;
+				}
+				else if (zoomDistance > 100)
+				{
+					zoomDistance = 100;
+				}
+
 				if (InputStates.mstate != bstate && useMouse == true)
 				{
 					float xDif = InputStates.mstate.X - bstate.X;

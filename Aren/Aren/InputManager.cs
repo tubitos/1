@@ -54,23 +54,11 @@ namespace Aren
 		void GameMenu (InputPlayableKeyBoard ipk)
 		{
 			EngineSettings.freeMouse = !EngineSettings.freeMouse;
-
-			//if (gameMenu == null)
-			//{
-			//    gameMenu = new GameMenu ();
-			//    ScreenManager.AddScreen (gameMenu);
-			//}
-			//else
-			//{
-			//    gameMenu.active = !gameMenu.active;
-			//}
 		}
-
-		Saver saver = new Saver ();
 
 		void Save (InputPlayableKeyBoard ipk)
 		{
-			saver.Save ();
+			Saver.Save();
 		}
 
 		void LeaveGame (InputPlayableKeyBoard ipk)
