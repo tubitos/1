@@ -32,10 +32,10 @@ namespace Aren.engine.entity.mob.people.player
 		float zoomDistance;
 		float height;
 		Boolean _firstPerson;
-		Vector3 scale = new Vector3(.05F);
+		Vector3 scale = new Vector3(1F);
 
 		public Player (IScreen screen, Vector3 position, Matrix rotation, SimpleModel model, float width, float height, Boolean useThirdPerson = false)
-			: base(screen, position, rotation, width, height, new Vector3(.05F))
+			: base(screen, position, rotation, width, height, new Vector3(1F))
 		{
 			this.height = height * scale.Y;
 
@@ -46,14 +46,14 @@ namespace Aren.engine.entity.mob.people.player
 			mod = model;
 
 			obj = new IObject(Materials.dMaterial, mod, charecter);
-
+			
 			Mouse.SetPosition(EngineSettings.graphicInfo.BackBufferWidth / 2, EngineSettings.graphicInfo.BackBufferHeight / 2);
 			bstate = Mouse.GetState();
 
 			rotSpeed = 0.05F;
 			zoomDistance = 50;
 
-			camera = new PlayerCamera(obj);
+			camera = new PlayerCamera(obj, (height / 2));
 			camera.HorizontalOffset = -camera.HorizontalOffset;
 
 			UpdateCamera();

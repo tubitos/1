@@ -65,7 +65,7 @@ namespace Aren
 			//Create player and player camera
 			//
 			Player player = new Player (this, new Vector3 (675, 100, 1566), Matrix.Identity,
-				new SimpleModel (factory, "Models//objects//people//baseMan", "Models//objects//people//baseManT"), 40.0F, 100.0F, true);
+				new SimpleModel (factory, "Models//objects//people//baseMan", "Models//objects//people//baseManT"), 1.0F, 5.0F, true);
 			World.AddObject (player.GetObject ());
 			World.CameraManager.AddCamera (player.GetCamera (), "player cam");
 			World.CameraManager.SetActiveCamera ("player cam");

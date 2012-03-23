@@ -11,6 +11,8 @@ namespace Aren.engine.entity.mob.people.player
 {
 	public class PlayerCamera : ICamera
 	{
+		public float targetVerticalOffset;
+
 		private bool yAlwaysUp = false;
 
 		public bool YAlwaysUp
@@ -55,15 +57,17 @@ namespace Aren.engine.entity.mob.people.player
 		private IObject obj;
 		private Vector3 _frente = Vector3.UnitX;
 
-		public PlayerCamera (IObject obj)
+		public PlayerCamera (IObject obj, float camereaVerticalOffset)
 		{
+			targetVerticalOffset = camereaVerticalOffset;
+
 			this.obj = obj;
 			Up = Vector3.Up;
 			init();
 		}
 
 		public PlayerCamera (IObject obj, float horizontalOffset, float verticalOffset)
-			: this(obj)
+			: this(obj, 0)
 		{
 			this.horizontalOffset = horizontalOffset;
 			this.verticalOffset = verticalOffset;
@@ -156,7 +160,10 @@ namespace Aren.engine.entity.mob.people.player
 			set
 			{
 				this._target = value;
-				_view = Matrix.CreateLookAt(_position, value, Up);// cria o lookat, com a posicao do objeto como target e o offset com a transgformacao do rigidbody como a posicao da camera
+
+				_target.Y = value.Y + targetVerticalOffset;
+
+				_view = Matrix.CreateLookAt(_position, _target, Up);// cria o lookat, com a posicao do objeto como target e o offset com a transgformacao do rigidbody como a posicao da camera
 			}
 		}
 
@@ -275,6 +282,7 @@ namespace Aren.engine.entity.mob.people.player
 			Matrix transforma = Matrix.Multiply(obj.WorldMatrix, r);
 			_position = Vector3.Transform(Vector3.Zero, transforma);
 			_target = Vector3.Transform(Vector3.Zero, obj.WorldMatrix);
+			_target.Y += targetVerticalOffset;
 			_view = Matrix.CreateLookAt(_position, _target, Up);// cria o lookat, com a posicao do objeto como target e o offset com a transgformacao do rigidbody como a posicao da camera
 			Vp = View * Projection;
 			_hasmoved = true;
